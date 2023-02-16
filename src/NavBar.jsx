@@ -3,15 +3,15 @@
 export default function NavBar() {
   return (
     <nav className="nav">
-      <a href='/' className='title'>
+      <a href='/Home' className='title'>
         Oz
       </a>
       <ul className='menu'>
-        <li>
-          <a href='/'>pricing</a>
+        <li className="active">
+          <a href='/Pricing'>Pricing</a>
         </li>
         <li>
-          <a href='/'>About</a>
+          <a href='/About'>About</a>
         </li>
       </ul>
     </nav>
