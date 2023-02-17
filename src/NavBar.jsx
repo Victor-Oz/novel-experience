@@ -1,19 +1,16 @@
-/** @format */
+import { Link, useMatch, useResolvedPath, NavLink} from "react-router-dom"
 
-export default function NavBar() {
+export default function Navbar() {
   return (
     <nav className="nav">
-      <a href='/Home' className='title'>
-        Oz
-      </a>
-      <ul className='menu'>
-        <li className="active">
-          <a href='/Pricing'>Pricing</a>
-        </li>
-        <li>
-          <a href='/About'>About</a>
-        </li>
+      <NavLink to="/Home" activeClassname="active" className="site-title">
+        Site Name
+      </NavLink>
+      <ul>
+        <NavLink activeClassname="active" to="/pricing">Pricing</NavLink>
+        <NavLink activeClassname="active" to="/about">About</NavLink>
       </ul>
     </nav>
-  );
+  )
 }
+

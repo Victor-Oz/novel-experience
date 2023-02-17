@@ -1,29 +1,23 @@
-/** @format */
-import { useState } from "react";
-import NavBar from "./NavBar";
-import Pricing from "./Pricing";
-import Home from "./Home";
-import About from "./About";
+import Navbar from "./Navbar"
+import Pricing from "./Pricing"
+import Home from "./Home"
+import About from "./About"
+import { Route, Routes } from "react-router-dom"
 
 function App() {
-  let component;
-  switch (window.location.pathname) {
-    case "/Home":
-      component = <Home />;
-      break;
-    case "/Pricing":
-      component = <Pricing />;
-      break;
-    case "/About":
-      component = <About />;
-      break;
-  }
   return (
-    <div className='App'>
-      <NavBar />
-      <div className='container'>{component}</div>
-    </div>
-  );
+    <>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
