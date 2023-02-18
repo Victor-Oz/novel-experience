@@ -1,16 +1,17 @@
-import { Link, useMatch, useResolvedPath, NavLink} from "react-router-dom"
+/** @format */
+
+import { Link, useMatch, useResolvedPath, NavLink } from "react-router-dom";
+import MenuButton from "./components/MenuButton.jsx";
 
 export default function Navbar() {
   return (
-    <nav className="nav">
-      <NavLink to="/Home" activeClassname="active" className="site-title">
-        Site Name
+    <nav className='nav'>
+      <NavLink to='/Home' activeClassname='active' className='site-title'>
+        OZ
       </NavLink>
       <ul>
-        <NavLink activeClassname="active" to="/pricing">Pricing</NavLink>
-        <NavLink activeClassname="active" to="/about">About</NavLink>
+        <MenuButton />
       </ul>
     </nav>
-  )
+  );
 }
-
