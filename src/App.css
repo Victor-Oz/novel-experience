@@ -9,11 +9,10 @@
 
 body {
   margin: 0;
-
   margin: red 20px solid;
 }
-.title{
-  font-size: 49px;
+.site-title{
+  font-size: 4em;
 }
 .nav {
   background-color: rgb(57, 56, 56);
@@ -23,6 +22,7 @@ body {
   align-items: stretch;
   gap: 2rem;
   padding: 0 2rem;
+  height: 6em;
 }
 
 .nav ul {
@@ -59,4 +59,19 @@ body {
 
 .container{
   text-align: center;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f9f9f9;
+
+}
+
+.blob{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-top: 60PX;
 }

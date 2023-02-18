@@ -8,16 +8,17 @@ const FunnyLinkButton = ({href, ...props}) =>
   <a href={href}><Blob size="2em" {...props}/></a>
 
 const BackgroundBlob = ({style, props}) =>
-  <Blob size="70vh"
+  <Blob size="70vw"
     style={{
         position: 'relative',
-        top: '1%',
-        right: '1%',
+        top: '0%',
+        right: '0%',
         zIndex: -1,
-        backgroundColor: '#21D4FD',
-        color: 'white',
+        backgroundColor: 'green',
+        color: 'blue',
         opacity: 1,
-        fontSize: '40vh',
+        fontSize: '100vh',
+
         ...style
     }}
     {...props}

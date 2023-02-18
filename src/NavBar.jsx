@@ -10,7 +10,7 @@ export default function Navbar() {
         OZ
       </NavLink>
       <ul>
-        <MenuButton />
+        <MenuButton width="52" height="52"/>
       </ul>
     </nav>
   );
