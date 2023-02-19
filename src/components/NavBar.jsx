@@ -1,7 +1,7 @@
 /** @format */
 
 import { Link, useMatch, useResolvedPath, NavLink } from "react-router-dom";
-import MenuButton from "./components/MenuButton.jsx";
+import MenuButton from "./MenuButton.jsx";
 
 export default function Navbar() {
   return (
@@ -10,7 +10,7 @@ export default function Navbar() {
         OZ
       </NavLink>
       <ul>
-        <MenuButton width="52" height="52"/>
+        <MenuButton className='menu' width='92' height='92' />
       </ul>
     </nav>
   );
