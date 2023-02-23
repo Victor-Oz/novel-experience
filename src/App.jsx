@@ -1,22 +1,31 @@
-import Navbar from "./NavBar"
-import Pricing from "./pages/Pricing"
-import Home from "./pages/Home"
-import About from "./pages/About"
+import Navbar from "./Navbar"
+import Pricing from "./Pricing"
+import Home from "./Home"
+import About from "./About"
 import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className='container'>
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
         </Routes>
+        <div className='blob'>
+          <BackgroundBlob />
+        </div>
+        <IntroText />
+        <TextSlab />
+        <StaticBlob />
+        <NiceQuote/>
+        <div className='blob'><BottomBackgroundBlob/></div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
