@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 /** @format */
 
-import Navbar from "./components/NavBar";
 import Pricing from "./pages/Pricing";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,18 +12,14 @@ import StaticBlob from "./components/StaticBlob";
 import NiceQuote from "./components/NiceQuote";
 import BottomBackgroundBlob from "./components/BottomMovingBlob";
 import BottomTest from "./components/BottomTest";
-=======
-import Navbar from "./Navbar"
-import Pricing from "./Pricing"
-import Home from "./Home"
-import About from "./About"
-import { Route, Routes } from "react-router-dom"
->>>>>>> cfe1c93b6a9dc6586923d669bf85dff7790bb1b0
+import NavBar from "./components/NavBar"
+
+
 
 function App() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <div className='container'>
         <Routes>
           <Route path="/Home" element={<Home />} />
