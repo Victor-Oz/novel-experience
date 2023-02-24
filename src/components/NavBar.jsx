@@ -7,16 +7,14 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   return (
     <nav className='nav'>
-      <motion.NavLink
-        animate={{ x: 100 , scale :1.2}}
-        transition={{ delay: 1 }}
+      <NavLink
         to='/Home'
         activeClassname='active'
         className='site-title'>
         OZ
-      </motion.NavLink>
-      <ul>
-        <MenuButton className='menu' width='92' height='92' />
+      </NavLink>
+      <ul  className='menu'>
+        <MenuButton className='menu' width='42' height='42' />
       </ul>
     </nav>
   );

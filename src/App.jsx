@@ -11,6 +11,7 @@ import TextSlab from "./components/TextSlab";
 import StaticBlob from "./components/StaticBlob";
 import NiceQuote from "./components/NiceQuote";
 import BottomBackgroundBlob from "./components/BottomMovingBlob";
+import BottomTest from "./components/BottomTest";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <TextSlab />
         <StaticBlob />
         <NiceQuote/>
+        <BottomTest/>
         <div className='blob'><BottomBackgroundBlob/></div>
       </div>
     </>
