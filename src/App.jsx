@@ -11,8 +11,8 @@ import TextSlab from "./components/TextSlab";
 import StaticBlob from "./components/StaticBlob";
 import NiceQuote from "./components/NiceQuote";
 import BottomBackgroundBlob from "./components/BottomMovingBlob";
-import BottomTest from "./components/BottomTest";
 import NavBar from "./components/NavBar"
+import BlobText from "./components/BlobText";
 
 
 
@@ -27,14 +27,16 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <div className="blob-container">
+        <BlobText />
         <div className='blob'>
           <BackgroundBlob />
+        </div>
         </div>
         <IntroText />
         <TextSlab />
         <StaticBlob />
         <NiceQuote/>
-        <BottomTest/>
         <div className='blob'><BottomBackgroundBlob/></div>
       </div>
     </>

@@ -11,7 +11,7 @@ export default function Navbar() {
         to='/Home'
         activeClassname='active'
         className='site-title'>
-        OZ
+        Outsider
       </NavLink>
       <ul  className='menu'>
         <MenuButton className='menu' width='42' height='42' />
