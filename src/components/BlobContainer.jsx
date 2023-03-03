@@ -15,7 +15,14 @@ function BlobContainer() {
       <div className='dashboard-text'>
         Discover the hidden gems of YOUR CITY
       </div>
-      ;
+      <motion.img
+        className='dash-alien'
+        src='src\assets\alien.png'
+        initial={{ x: 300 }}
+        animate={{ x: -40 }}
+        transition={{ delay: 0.7 }}>
+     
+      </motion.img>
     </div>
   );
 }
