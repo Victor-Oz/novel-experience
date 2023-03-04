@@ -80,6 +80,15 @@ body {
   grid-template-columns: repeat(6, 1fr);
   margin-top: 2em;
   margin-bottom: 0;
+  padding-bottom: 0;
+}
+.dash-button{
+font-family: poppins ;
+font-size: medium;
+font-weight: 700;
+  width: 150px;
+  height: 50px;
+
 }
 .space-man{
   height: 270px;

@@ -1,5 +1,5 @@
 /** @format */
-import BlobContainer from "../components/BlobContainer";
+import DashContainer from "../components/DashContainer";
 import IntroText from "../components/IntroText";
 import TextSlab from "../components/TextSlab";
 import StaticBlob from "../components/StaticBlob";
@@ -9,7 +9,7 @@ export default function Home() {
   return (
   <div>
 
-  <BlobContainer/>
+  <DashContainer/>
   <IntroText />
   <TextSlab />
   <StaticBlob />

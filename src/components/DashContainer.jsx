@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 function DashContainer() {
   return (
+    <div>
     <div className='dashboard-container'>
       <motion.img
         className='space-man'
@@ -23,10 +24,10 @@ function DashContainer() {
         transition={{ delay: 0.7 }}>
      
       </motion.img>
-
-      <button >Get Started</button>
+      </div>
+      <button className="dash-button" >Get Started</button>
     </div>
   );
 }
 
-export default BlobContainer;
+export default DashContainer;
