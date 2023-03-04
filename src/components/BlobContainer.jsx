@@ -1,15 +1,15 @@
 /** @format */
 import { motion } from "framer-motion";
 
-function BlobContainer() {
+function DashContainer() {
   return (
-    <div className='blob-container'>
+    <div className='dashboard-container'>
       <motion.img
         className='space-man'
         src='src\assets\flyboy.png'
         initial={{ x: -300 }}
         animate={{ x: -80 }}
-        transition={{ delay: 1 }}>
+        transition={{ delay: 0.5 }}>
      
       </motion.img>
       <div className='dashboard-text'>
@@ -23,6 +23,8 @@ function BlobContainer() {
         transition={{ delay: 0.7 }}>
      
       </motion.img>
+
+      <button >Get Started</button>
     </div>
   );
 }

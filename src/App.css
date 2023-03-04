@@ -75,11 +75,11 @@ body {
 
 }
 
-.blob-container {
+.dashboard-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 2em;
-  margin-bottom: 4em;
+  margin-bottom: 0;
 }
 .space-man{
   height: 270px;
