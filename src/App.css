@@ -20,7 +20,7 @@ body {
   font-size: 2em;
   color: #FFDA15;;
   font-family: "Lobster", cursive;
-  margin-left: 0;
+  margin-left: 30px;
   padding-left: 0;
 }
 .nav {
@@ -33,7 +33,7 @@ body {
   box-shadow: o 4px 4px #f9f9f9;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background-color: rgb(39, 39, 39);
   z-index: 4;
   box-shadow: 0px 7px 16px -15px#FFDA15
@@ -96,6 +96,7 @@ body {
 .dashboard-container{
   margin-bottom: 70px;
   padding-top: 70px;
+  overflow: hidden;
 }
 .dash-button {
   font-family: poppins;
@@ -166,6 +167,7 @@ body {
   background-size: cover;
   padding: 50px 0;
   box-shadow: 24px 60px 20px -40px inset rgb(39, 39, 39);
+  overflow: hidden;
 
 }
 .left-chat-container {
@@ -217,6 +219,7 @@ body {
 background-color: #FFDA15;
 color: black;
   padding: 40px 0 40px 0;
+  overflow: hidden;
 }
 
 .pleasure-park-container{
