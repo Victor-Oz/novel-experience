@@ -27,11 +27,12 @@
 //   export default BottomBackgroundBlob
 
 
-function BottomBackgroundBlob(){
+function SampleLocations(){
   return(
-<div className='blob'>
+<div className='sample-locations-container'><img src="public\pleasure.webp" alt="pleasure park" className="chat-image" />
+      <img src="public\boomtown.jpg" alt="pleasure park" className="chat-image" /> 
       </div>
   )
 }
 
-export default BottomBackgroundBlob
+export default SampleLocations

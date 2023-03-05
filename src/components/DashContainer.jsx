@@ -7,7 +7,7 @@ function DashContainer() {
       <div className='dashboard-container'>
         <motion.img
           className='space-man'
-          src='src\assets\flyboy.png'
+          src='public\flyboy.png'
           initial={{ x: -300 }}
           animate={{ x: -80 }}
           transition={{ delay: 0.5 }}></motion.img>
@@ -16,7 +16,7 @@ function DashContainer() {
         </div>
         <motion.img
           className='dash-alien'
-          src='src\assets\alien.png'
+          src='public\alien.png'
           initial={{ scale: 1.4 }}
           animate={{ x: -40 ,scale: 1}}
           transition={{ delay: 0.7 }}></motion.img>

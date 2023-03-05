@@ -145,17 +145,15 @@ body {
 }
 .chat-box-container {
   background-image: url(https://w0.peakpx.com/wallpaper/901/891/HD-wallpaper-pattern-black-dark-grey-shape.jpg);
-background-size: cover;
-padding: 50px 0 ;
-box-shadow:  24px 60px 20px -40px  inset rgb(39, 39, 39);
-
+  background-size: cover;
+  padding: 50px 0;
+  box-shadow: 24px 60px 20px -40px inset rgb(39, 39, 39);
 }
 .left-chat-container {
   display: flex;
   flex-direction: column;
   justify-content: start;
   margin-top: 0;
-
 }
 .right-chat-container {
   display: flex;
@@ -190,20 +188,22 @@ box-shadow:  24px 60px 20px -40px  inset rgb(39, 39, 39);
   background-color: rgb(216, 216, 216);
   margin: 6px;
 }
-.chat-gif{
-  border-radius: 30px ;
+.chat-gif {
+  border-radius: 30px;
+  border: 2px solid black;
+  margin: 6px;
+}
+.chat-image {
+  border-radius: 30px;
   border: 2px solid black;
   margin: 6px;
 
+  max-height: 300px;
 }
-.chat-image{
-  border-radius: 30px ;
-  border: 2px solid black;
-  margin: 6px;
-  max-width: 500px;
-  max-height: 600px;
+.sample-locations-container {
+  background-color: #f9f9f9;
+  padding: 40px 0 40px 0;
 }
-
 .nice-quote {
   font-size: 3em;
 }

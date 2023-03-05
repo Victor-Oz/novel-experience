@@ -1,7 +1,7 @@
 /** @format */
 import { motion, useScroll } from "framer-motion";
 
-function StaticBlob() {
+function ChatBox() {
   return (
     <div className='chat-box-container'>
       <motion.div
@@ -20,7 +20,7 @@ function StaticBlob() {
         viewport={{ once: true }}
         transition={{ delay: 0.7 }}
         className='right-chat-container'>
-        <img className='chat-gif' src='src\assets\giphy.gif'></img>
+        <img className='chat-gif' src='public\giphy.gif'></img>
         <div className='right-chat '>Maybe some other time </div>
       </motion.div>
       <motion.div
@@ -38,4 +38,4 @@ function StaticBlob() {
   );
 }
 
-export default StaticBlob;
+export default ChatBox;
