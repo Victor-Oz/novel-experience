@@ -7,7 +7,7 @@ function ChatBox() {
       <motion.div
         initial={{ x: -40, opacity: 0.5, scale: 0.9 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         transition={{ delay: 0.5 }}
         className='left-chat-container'>
         <div className='left-chat'>Hi 👋</div>
@@ -17,22 +17,21 @@ function ChatBox() {
       <motion.div
         initial={{ x: 70, opacity: 0.5, scale: 0.9 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ delay: 0.7 }}
         className='right-chat-container'>
-        <img className='chat-gif' src='public\giphy.gif'></img>
+        <img className='chat-gif' src='/giphy.gif'></img>
         <div className='right-chat '>Maybe some other time </div>
       </motion.div>
       <motion.div
         initial={{ x: -40, opacity: 0.5, scale: 0.9 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ delay: 0.7 }}
         className='left-chat-container'>
         <div className='left-chat'>No i'snt an option 😂😂</div>
         <div className='left-chat'>I'll change your mind</div>
-        {/* <img src="src\assets\pleasure.webp" alt="pleasure park" className="chat-image" />
-      <img src="src\assets\boomtown.jpg" alt="pleasure park" className="chat-image" /> */}
+      
       </motion.div>
     </div>
   );

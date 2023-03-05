@@ -1,38 +1,39 @@
-// import * as React from 'react'
-// import { Blob } from 'react-blob'
+/** @format */
+import { motion } from "framer-motion";
 
-// const Avatar = ({src, alt}) =>
-//   <Blob size="100px" src={src} alt={alt}/>
-
-// const FunnyLinkButton = ({href, ...props}) =>
-//   <a href={href}><Blob size="2em" {...props}/></a>
-
-// const BottomBackgroundBlob = ({style, props}) =>
-//   <Blob size="70vw"
-//     style={{
-//         position: 'relative',
-//         top: '0%',
-//         right: '0%',
-//         zIndex: -1,
-//         backgroundColor: 'green',
-//         color: 'blue',
-//         opacity: 0.3,
-//         fontSize: '100vh',
-
-//         ...style
-//     }}
-//     {...props}
-//   />
-
-//   export default BottomBackgroundBlob
-
-
-function SampleLocations(){
-  return(
-<div className='sample-locations-container'><img src="public\pleasure.webp" alt="pleasure park" className="chat-image" />
-      <img src="public\boomtown.jpg" alt="pleasure park" className="chat-image" /> 
-      </div>
-  )
+function SampleLocations() {
+  return (
+    <div className='sample-locations-container'>
+      <motion.div className='chat grid-container' whileHover={{ opacity: 1 }}>
+        <h2 className='h2'>Pleasure Park </h2>
+        <motion.img
+          initial={{ opacity: 0.5 , scale:0.8}}
+          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+          src='/pleasure.webp'
+          alt='pleasure park'
+          className='chat-image'
+        />
+      </motion.div>
+      <motion.div className='chat grid-container' whileHover={{ opacity: 1 }}>
+      <h2 className='h2 wood'>The WoodHouse Cafe</h2>
+      <motion.img
+          initial={{ opacity: 0.5 , scale:0.8}}
+          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+        src='/woodhouse.jpg'
+        alt='wood house cafe
+        '
+        className='chat-image'
+      />
+       </motion.div>
+      <h2 className='h2'>Just look at these locations , They're amaizing </h2>
+    </div>
+  );
 }
 
-export default SampleLocations
+export default SampleLocations;

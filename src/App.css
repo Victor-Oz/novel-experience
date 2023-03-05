@@ -1,4 +1,7 @@
 /** @format */
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
 
 * {
   box-sizing: border-box;
@@ -9,14 +12,13 @@
 
 body {
   margin: 0;
-  margin: red 20px solid;
   background-color: rgb(39, 39, 39);
   color: #f9f9f9;
 }
 
-.site-title {
+#site-title {
   font-size: 2em;
-  color: #f9f9f9;
+  color: #FFDA15;;
   font-family: "Lobster", cursive;
   margin-left: 0;
   padding-left: 0;
@@ -27,8 +29,14 @@ body {
   align-items: stretch;
   gap: 2rem;
   padding: 0;
-  height: 7em;
+  height: 6em;
   box-shadow: o 4px 4px #f9f9f9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  z-index: 4;
+  box-shadow: 0px 7px 16px -15px#FFDA15
 }
 
 .nav ul {
@@ -67,18 +75,27 @@ body {
 .dashboard-text {
   grid-row: 1/5;
   grid-column: 1/7;
-  font-size: 3.5em;
+  font-size: 60px;
   font-family: poppins;
   font-weight: 700;
   margin: 0 40px 0 40px;
 }
 
-.dashboard-container {
+.dashboard-text .discover{
+  font-size: 80px;
+} 
+.dashboard-items {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 2em;
   margin-bottom: 0;
   padding-bottom: 0;
+
+}
+
+.dashboard-container{
+  margin-bottom: 70px;
+  padding-top: 70px;
 }
 .dash-button {
   font-family: poppins;
@@ -86,9 +103,10 @@ body {
   font-weight: 700;
   width: 150px;
   height: 50px;
+  margin-top: 30px;
   border-radius: 10px;
   color: black;
-  background-color: rgb(171, 171, 0);
+  background-color: #FFDA15;;
 }
 
 .space-man {
@@ -100,7 +118,7 @@ body {
 }
 .dash-alien {
   height: 270px;
-  grid-row: 4/6;
+  grid-row: 3/5;
   grid-column: 5/8;
   z-index: -1;
   opacity: 0.2;
@@ -148,6 +166,7 @@ body {
   background-size: cover;
   padding: 50px 0;
   box-shadow: 24px 60px 20px -40px inset rgb(39, 39, 39);
+
 }
 .left-chat-container {
   display: flex;
@@ -193,17 +212,37 @@ body {
   border: 2px solid black;
   margin: 6px;
 }
-.chat-image {
-  border-radius: 30px;
-  border: 2px solid black;
-  margin: 6px;
 
-  max-height: 300px;
-}
 .sample-locations-container {
-  background-color: #f9f9f9;
+background-color: #FFDA15;
+color: black;
   padding: 40px 0 40px 0;
 }
+
+.pleasure-park-container{
+
+
+}
+.chat-image {
+  border-radius: 30px;
+  border: 4px dashed black;
+  margin: 0 6px;
+  max-width: 85vw;
+}
+.h2{
+  grid-row: 3/4;
+  grid-column: 1/5;
+  font-family: 'Anton';
+  font-size: 50px;
+  color: black;
+  margin-bottom: 0;
+}
+
+.wood{
+  color: black;
+
+}
+
 .nice-quote {
   font-size: 3em;
 }

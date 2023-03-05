@@ -10,7 +10,7 @@ export default function Navbar() {
       <NavLink
         to='/Home'
         activeClassname='active'
-        className='site-title'>
+        id='site-title'>
         Outsider
       </NavLink>
       <ul  className='menu'>
