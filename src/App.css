@@ -10,7 +10,7 @@
 body {
   margin: 0;
   margin: red 20px solid;
-  background-color: rgb(38, 38, 38);
+  background-color: rgb(39, 39, 39);
   color: #f9f9f9;
 }
 
@@ -28,7 +28,7 @@ body {
   gap: 2rem;
   padding: 0;
   height: 7em;
-  box-shadow:o 4px 4px #f9f9f9;
+  box-shadow: o 4px 4px #f9f9f9;
 }
 
 .nav ul {
@@ -70,9 +70,7 @@ body {
   font-size: 3.5em;
   font-family: poppins;
   font-weight: 700;
-  margin:0  40px 0 40px;
-
-
+  margin: 0 40px 0 40px;
 }
 
 .dashboard-container {
@@ -82,25 +80,28 @@ body {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.dash-button{
-font-family: poppins ;
-font-size: medium;
-font-weight: 700;
+.dash-button {
+  font-family: poppins;
+  font-size: medium;
+  font-weight: 700;
   width: 150px;
   height: 50px;
-
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(171, 171, 0);
 }
-.space-man{
+
+.space-man {
   height: 270px;
   grid-row: 1/5;
-  grid-column:1/3;
+  grid-column: 1/3;
   z-index: -1;
   opacity: 0.2;
 }
-.dash-alien{
+.dash-alien {
   height: 270px;
   grid-row: 4/6;
-  grid-column:5/8;
+  grid-column: 5/8;
   z-index: -1;
   opacity: 0.2;
 }
@@ -123,7 +124,7 @@ font-weight: 700;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-.slab-container{
+.slab-container {
   width: 800px;
 }
 .pleasure-park {
@@ -142,10 +143,67 @@ font-weight: 700;
 .quote {
   width: 300px;
 }
-.static-blob-container {
-  display: inline-block;
-  width: 98vw;
+.chat-box-container {
+  background-image: url(https://w0.peakpx.com/wallpaper/901/891/HD-wallpaper-pattern-black-dark-grey-shape.jpg);
+background-size: cover;
+padding: 50px 0 ;
+box-shadow:  24px 60px 20px -40px  inset rgb(39, 39, 39);
+
 }
+.left-chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 0;
+
+}
+.right-chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.left-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.3em;
+  width: fit-content;
+  padding: 30px;
+  height: 50px;
+  border-radius: 16px 16px 16px 0px;
+  color: black;
+  background-color: rgb(216, 216, 216);
+  margin: 6px;
+}
+.right-chat {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.3em;
+  width: fit-content;
+  padding: 30px;
+  height: 50px;
+  border-radius: 16px 16px 0px 16px;
+  color: black;
+  background-color: rgb(216, 216, 216);
+  margin: 6px;
+}
+.chat-gif{
+  border-radius: 30px ;
+  border: 2px solid black;
+  margin: 6px;
+
+}
+.chat-image{
+  border-radius: 30px ;
+  border: 2px solid black;
+  margin: 6px;
+  max-width: 500px;
+  max-height: 600px;
+}
+
 .nice-quote {
   font-size: 3em;
 }
