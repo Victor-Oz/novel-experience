@@ -1,7 +1,5 @@
 /** @format */
-  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,13 +10,13 @@
 
 body {
   margin: 0;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(0, 0, 0);
   color: #f9f9f9;
 }
 
 #site-title {
   font-size: 2em;
-  color: #FFDA15;;
+  color: #ffda15;
   font-family: "Lobster", cursive;
   margin-left: 30px;
   padding-left: 0;
@@ -34,9 +32,9 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(0, 0, 0);
   z-index: 4;
-  box-shadow: 0px 7px 16px -15px#FFDA15
+  box-shadow: 0px 7px 16px -15px#FFDA15;
 }
 
 .nav ul {
@@ -62,11 +60,11 @@ body {
   font-weight: bold;
 }
 .active {
-  background-color: rgb(38, 38, 38);
+  /* background-color: rgb(38, 38, 38); */
 }
 
-.svgmenu{
-  margin-right: 20px ;
+.svgmenu {
+  margin-right: 20px;
 }
 
 .nav li:hover {
@@ -85,19 +83,18 @@ body {
   margin: 0 40px 0 40px;
 }
 
-.dashboard-text .discover{
+.dashboard-text .discover {
   font-size: 80px;
-} 
+}
 .dashboard-items {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 2em;
   margin-bottom: 0;
   padding-bottom: 0;
-
 }
 
-.dashboard-container{
+.dashboard-container {
   margin-bottom: 50px;
   padding-top: 70px;
   overflow: hidden;
@@ -109,9 +106,10 @@ body {
   width: 150px;
   height: 50px;
   margin-top: 30px;
-  border-radius: 10px;
-  color: black;
-  background-color: #FFDA15;;
+
+  color: white;
+  border: none;
+  background-color: rgb(117, 0, 216);
 }
 
 .space-man {
@@ -142,8 +140,7 @@ body {
 .text-slab {
   font-size: 80px;
   white-space: nowrap;
-  font-family: 'Anton';
-
+  font-family: "Anton";
 }
 .slab-container {
   overflow: hidden;
@@ -170,7 +167,6 @@ body {
   padding: 50px 0;
   box-shadow: 24px 60px 20px -40px inset rgb(39, 39, 39);
   overflow: hidden;
-
 }
 .left-chat-container {
   display: flex;
@@ -219,34 +215,55 @@ body {
 }
 
 .sample-locations-container {
-background-color: #FFDA15;
-color: black;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   padding: 40px 0 40px 0;
   overflow: hidden;
 }
 
-.pleasure-park-container{
-
-
+.experience-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 .chat-image {
-  border-radius: 30px;
-  border: 4px dashed black;
-  margin: 0 6px;
+  border-radius: 0px;
+  margin: 6px 0 40px 0;
   max-width: 85vw;
 }
-.h2{
-  grid-row: 3/4;
-  grid-column: 1/5;
-  font-family: 'Anton';
-  font-size: 50px;
-  color: black;
-  margin-bottom: 0;
+.h2 {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+ 
+
+
 }
+.purple {
+  background-color: rgb(117, 0, 216);
+  width: fit-content;
+  margin: 3px 0px;
 
-.wood{
+}
+.red {
+  background-color: rgb(235, 72, 77);
+  width: fit-content;
+  margin: 50px 0px;
+  padding: 0 12px;
+
+}
+p{
+  font-size: 25px;
+  max-width: 400px;
+  text-align: left;
+}
+.h2-head {
+  margin: 120px 0px;
+}
+.wood {
   color: black;
-
 }
 
 .nice-quote {
