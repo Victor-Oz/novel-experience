@@ -1,5 +1,6 @@
 /** @format */
 import { motion } from "framer-motion";
+import { easeInOut } from "popmotion";
 
 function DashContainer() {
   return (
@@ -10,7 +11,7 @@ function DashContainer() {
           src='/flyboy.png'
           initial={{ x: -300 }}   
           animate={{ x: -80 }}
-          transition={{ delay: 0.5 }}></motion.img>
+          transition={{ delay: 0.5 , duration:0.8}}></motion.img>
         <div className='dashboard-text'>
           <span className="discover">Discover</span> the hidden gems of YOUR CITY
         </div>
@@ -19,7 +20,7 @@ function DashContainer() {
           src='/alien.png'
           initial={{ scale: 1.4 }}
           animate={{ x: -40, scale: 1 }}
-          transition={{ delay: 0.7 }}></motion.img>
+          transition={{ delay: 0.7 , duration:0.9 , ease:easeInOut}}></motion.img>
       </div>
       <motion.button
         whileHover={{ scale: 1.3 }}

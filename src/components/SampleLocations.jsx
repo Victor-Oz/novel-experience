@@ -7,10 +7,10 @@ function SampleLocations() {
       <motion.div className='chat grid-container' whileHover={{ opacity: 1 }}>
         <h2 className='h2'>Pleasure Park </h2>
         <motion.img
-          initial={{ opacity: 0.5 , scale:0.8}}
-          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          initial={{ opacity: 0.5 , scale:0.9 , y:15}}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.2 , duration:0.5}}
           whileHover={{ scale: 1.05 }}
           src='/pleasure.webp'
           alt='pleasure park'
@@ -20,10 +20,10 @@ function SampleLocations() {
       <motion.div className='chat grid-container' whileHover={{ opacity: 1 }}>
       <h2 className='h2 wood'>The WoodHouse Cafe</h2>
       <motion.img
-          initial={{ opacity: 0.5 , scale:0.8}}
-          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          initial={{ opacity: 0.5 , scale:0.9 , y:15}}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.2 , duration:0.5}}
           whileHover={{ scale: 1.05 }}
         src='/woodhouse.jpg'
         alt='wood house cafe
