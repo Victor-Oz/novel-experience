@@ -1,6 +1,6 @@
 /** @format */
 import { motion } from "framer-motion";
-import { easeInOut } from "popmotion";
+
 
 function DashContainer() {
   return (
@@ -20,7 +20,7 @@ function DashContainer() {
           src='/alien.png'
           initial={{ scale: 1.4 }}
           animate={{ x: -40, scale: 1 }}
-          transition={{ delay: 0.7 , duration:0.9 , ease:easeInOut}}></motion.img>
+          transition={{ delay: 0.7 , duration:0.9 }}></motion.img>
       </div>
       <motion.button
         whileHover={{ scale: 1.3 }}
