@@ -59,7 +59,7 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.active {
+.active { 
   /* background-color: rgb(38, 38, 38); */
 }
 
@@ -227,14 +227,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+.experience-subcontainer{
+  align-items: start;
+  ;
+}
 .chat-image {
   border-radius: 0px;
   margin: 6px 0 40px 0;
-  max-width: 85vw;
+  max-width: 90vw;
+  ;
 }
 .h2 {
   font-family: "poppins";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 30px;
   color: rgb(255, 255, 255);
  
@@ -250,7 +255,7 @@ body {
 .red {
   background-color: rgb(235, 72, 77);
   width: fit-content;
-  margin: 50px 0px;
+  margin: 3px 0px;
   padding: 0 12px;
 
 }
@@ -259,7 +264,7 @@ p{
   max-width: 400px;
   text-align: left;
 }
-.h2-head {
+.h2-head , .h2-foot {
   margin: 120px 0px;
 }
 .wood {
