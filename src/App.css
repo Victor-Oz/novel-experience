@@ -16,7 +16,7 @@ body {
 
 #site-title {
   font-size: 2em;
-  color: #ffda15;
+  color:white;
   font-family: "Lobster", cursive;
   margin-left: 30px;
   padding-left: 0;
@@ -27,14 +27,14 @@ body {
   align-items: stretch;
   gap: 2rem;
   padding: 0;
-  height: 6em;
+  height: 5em;
   box-shadow: o 4px 4px #f9f9f9;
   position: fixed;
   top: 0;
   width: 100vw;
   background-color: rgb(0, 0, 0);
   z-index: 4;
-  box-shadow: 0px 7px 16px -15px#FFDA15;
+
 }
 
 .nav ul {
@@ -250,7 +250,7 @@ body {
   background-color: rgb(117, 0, 216);
   width: fit-content;
   margin: 3px 0px;
-
+  padding: 0 12px;
 }
 .red {
   background-color: rgb(235, 72, 77);
@@ -260,7 +260,9 @@ body {
 
 }
 p{
-  font-size: 25px;
+  font-family: poppins;
+  font-weight: 300;
+  font-size: 20px;
   max-width: 400px;
   text-align: left;
 }
