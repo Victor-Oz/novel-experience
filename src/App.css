@@ -18,8 +18,9 @@ body {
   font-size: 2em;
   color:white;
   font-family: "Lobster", cursive;
-  margin-left: 30px;
+  margin-left: 20px;
   padding-left: 0;
+  width: 120px;
 }
 .nav {
   display: flex;
