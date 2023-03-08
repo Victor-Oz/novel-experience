@@ -1,32 +1,26 @@
 /** @format */
 import { motion } from "framer-motion";
 
-
 function DashContainer() {
   return (
     <div className='dashboard-container'>
       <div className='dashboard-items'>
         <motion.img
-          className='space-man'
-          src='/flyboy.png'
-          initial={{ x: -300 }}   
-          animate={{ x: -80 }}
-          transition={{ delay: 0.5 , duration:0.8}}></motion.img>
-        <div className='dashboard-text'>
-          <span className="discover">Discover</span> the hidden gems of YOUR CITY
+          className='graffiti'
+          src='/graffiti.jpg'
+          initial={{ x: 0 }}
+          animate={{ x: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}></motion.img>
+        <div className=' purple dash-grid1'>One new experience per week,</div>
+        <div className=' red dash-grid2'>
+          For six weeks,no questions asked.
         </div>
-        <motion.img
-          className='dash-alien'
-          src='/alien.png'
-          initial={{ scale: 1.4 }}
-          animate={{ x: -40, scale: 1 }}
-          transition={{ delay: 0.7 , duration:0.9 }}></motion.img>
       </div>
       <motion.button
-        whileHover={{ scale: 1.3 }}
+        whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         className='dash-button'>
-        Get Started
+        Get Started >
       </motion.button>
     </div>
   );

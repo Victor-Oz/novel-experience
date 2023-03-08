@@ -16,7 +16,7 @@ body {
 
 #site-title {
   font-size: 2em;
-  color:white;
+  color: white;
   font-family: "Lobster", cursive;
   margin-left: 10px;
   padding-left: 0;
@@ -34,8 +34,7 @@ body {
   top: 0;
   width: 100vw;
   background-color: rgb(0, 0, 0);
-  z-index: 4;
-
+  z-index: 2;
 }
 
 .nav ul {
@@ -60,7 +59,7 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.active { 
+.active {
   /* background-color: rgb(38, 38, 38); */
 }
 
@@ -72,33 +71,58 @@ body {
   background-color: rgb(146, 0, 0);
 }
 
-.container {
-  text-align: center;
+.dash-grid1 {
+  grid-row: 1/4;
+  grid-column: 2/4;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
 }
-.dashboard-text {
-  grid-row: 1/5;
+.dash-grid2 {
+  grid-row: 1/4;
+  grid-column: 4/6;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+.graffiti {
+  width: 100vw;
+  grid-row: 2/7;
   grid-column: 1/7;
-  font-size: 60px;
-  font-family: poppins;
-  font-weight: 700;
-  margin: 0 40px 0 40px;
+  z-index: -1;
+  opacity: 0.2;
+
+    
 }
+
+/* grid-row: 1/5;
+  grid-column: 1/7; */
 
 .dashboard-text .discover {
   font-size: 80px;
 }
 .dashboard-items {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin-top: 2em;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
   margin-bottom: 0;
   padding-bottom: 0;
+
 }
 
 .dashboard-container {
+  margin-top: 3em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 50px;
   padding-top: 70px;
   overflow: hidden;
+
 }
 .dash-button {
   font-family: poppins;
@@ -106,27 +130,13 @@ body {
   font-weight: 700;
   width: 150px;
   height: 50px;
-  margin-top: 30px;
+  margin: 30px;
 
   color: white;
   border: none;
   background-color: rgb(117, 0, 216);
 }
 
-.space-man {
-  height: 270px;
-  grid-row: 1/5;
-  grid-column: 1/3;
-  z-index: -1;
-  opacity: 0.2;
-}
-.dash-alien {
-  height: 270px;
-  grid-row: 3/5;
-  grid-column: 5/8;
-  z-index: -1;
-  opacity: 0.2;
-}
 .menu {
   display: flex;
   align-items: center;
@@ -146,28 +156,14 @@ body {
 .slab-container {
   overflow: hidden;
 }
-.pleasure-park {
-  -webkit-mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoMjQ4LCAxMTcsIDU1LCAxKSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN0b3AgaWQ9InN0b3AyIiBzdG9wLWNvbG9yPSJyZ2JhKDI1MSwgMTY4LCAzMSwgMSkiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgICAgICAgICAgICAgIDwvZGVmcz4KICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9InVybCgjc3ctZ3JhZGllbnQpIiBkPSJNMjIsLTM3LjlDMjguMywtMzQuNSwzMywtMjguMSwzNiwtMjEuM0MzOSwtMTQuNSw0MC40LC03LjMsMzguOCwtMC45QzM3LjIsNS41LDMyLjgsMTAuOSwyOS43LDE3LjZDMjYuNiwyNC4yLDI0LjgsMzIuMSwyMC4xLDM1LjhDMTUuNCwzOS41LDcuNywzOS4yLDAuOCwzNy45Qy02LjIsMzYuNiwtMTIuMywzNC4zLC0xOC42LDMxLjRDLTI0LjgsMjguNiwtMzEsMjUsLTMzLjksMTkuN0MtMzYuOCwxNC40LC0zNi4zLDcuMiwtMzcsLTAuNEMtMzcuNywtOCwtMzkuNywtMTYsLTM3LjksLTIzLjJDLTM2LC0zMC40LC0zMC40LC0zNi43LC0yMy41LC0zOS43Qy0xNi42LC00Mi43LC04LjMsLTQyLjQsLTAuMiwtNDIuMUM3LjksLTQxLjcsMTUuNywtNDEuMywyMiwtMzcuOVoiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwIDUwKSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHlsZT0idHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZSAwczsiPjwvcGF0aD4KICAgICAgICAgICAgICA8L3N2Zz4=);
-}
 
-.item img {
-  width: 100%;
-}
-.item {
-  width: 33.3%;
-  -webkit-mask-repeat: no-repeat;
-  float: left;
-  border-radius: 25%;
-}
-.quote {
-  width: 300px;
-}
 .chat-box-container {
-  background-image: url(https://w0.peakpx.com/wallpaper/901/891/HD-wallpaper-pattern-black-dark-grey-shape.jpg);
+  background-image: url(https://w0.peakpx.com/wallpaper/1005/226/HD-wallpaper-abstract-amoled-edge-galaxy-iphone-neon-note-pink-purple-samsung.jpg);
   background-size: cover;
   padding: 50px 0;
-  box-shadow: 24px 60px 20px -40px inset rgb(39, 39, 39);
+  box-shadow: 24px 60px 20px -40px inset rgb(0, 0, 0);
   overflow: hidden;
+  filter: blur(0.2);
 }
 .left-chat-container {
   display: flex;
@@ -228,24 +224,19 @@ body {
   justify-content: center;
   align-items: center;
 }
-.experience-subcontainer{
+.experience-subcontainer {
   align-items: start;
-  ;
 }
 .chat-image {
   border-radius: 0px;
   margin: 6px 0 40px 0;
   max-width: 90vw;
-  ;
 }
 .h2 {
   font-family: "poppins";
   font-weight: 500;
   font-size: 30px;
   color: rgb(255, 255, 255);
- 
-
-
 }
 .purple {
   background-color: rgb(117, 0, 216);
@@ -258,16 +249,16 @@ body {
   width: fit-content;
   margin: 3px 0px;
   padding: 0 12px;
-
 }
-p{
+p {
   font-family: poppins;
   font-weight: 300;
   font-size: 20px;
   max-width: 400px;
   text-align: left;
 }
-.h2-head , .h2-foot {
+.h2-head,
+.h2-foot {
   margin: 120px 20px;
 }
 .wood {

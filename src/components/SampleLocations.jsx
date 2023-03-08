@@ -98,7 +98,7 @@ function SampleLocations() {
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.5 }}
           whileHover={{ scale: 1.03, filter: "brightness(1)" }}
-          src='/happyman.jpg'
+          src='/happygirl.jpg'
           alt='photograph of a man happy
         '
           className='chat-image'
