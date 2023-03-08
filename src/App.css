@@ -18,7 +18,7 @@ body {
   font-size: 2em;
   color:white;
   font-family: "Lobster", cursive;
-  margin-left: 20px;
+  margin-left: 10px;
   padding-left: 0;
   width: 120px;
 }
@@ -268,7 +268,7 @@ p{
   text-align: left;
 }
 .h2-head , .h2-foot {
-  margin: 120px 0px;
+  margin: 120px 20px;
 }
 .wood {
   color: black;
