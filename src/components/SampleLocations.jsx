@@ -27,14 +27,13 @@ function SampleLocations() {
       <motion.div
         className='chat experience-container'
         whileHover={{ opacity: 1 }}>
-        <div className='experience-subcontainer'>
-          <div className='h2 purple '>Highly Curated </div>
-          <div className='h2 purple '> experiences</div>
-          <p>
-            Unique restaurants, bars, art shows, performances and more, tailored
-            to you.
-          </p>
-        </div>
+        <div className='h2 purple '>Highly Curated </div>
+        <div className='h2 purple '> experiences</div>
+        <p>
+          Unique restaurants, bars, art shows, performances and more, tailored
+          to you.
+        </p>
+
         <motion.img
           initial={{
             opacity: 0.5,
@@ -54,14 +53,13 @@ function SampleLocations() {
       <motion.div
         className='chat experience-container'
         whileHover={{ opacity: 1 }}>
-        <div className='experience-subcontainer'>
-          <div className='h2 red'>A new challenge </div>
-          <div className='h2 red'>Every monday</div>
-          <p>
-            Get weekly challenges based on the theme of the week. Delivered via
-            the mobile app.
-          </p>
-        </div>
+        <div className='h2 red'>A new challenge </div>
+        <div className='h2 red'>Every monday</div>
+        <p>
+          Get weekly challenges based on the theme of the week. Delivered via
+          the mobile app.
+        </p>
+
         <motion.img
           initial={{
             opacity: 0.5,
@@ -82,11 +80,10 @@ function SampleLocations() {
       <motion.div
         className='chat experience-container'
         whileHover={{ opacity: 1 }}>
-        <div className='experience-subcontainer'>
-          <div className='h2 purple'>All over </div>
-          <div className='h2 purple'>The Garden city</div>
-          <p>Discover new places in GRA , Olu Obasanjo road and Beyond</p>
-        </div>
+        <div className='h2 purple'>All over </div>
+        <div className='h2 purple'>The Garden city</div>
+        <p>Discover new places in GRA , Olu Obasanjo road and Beyond</p>
+
         <motion.img
           initial={{
             opacity: 0.5,
