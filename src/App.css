@@ -71,44 +71,21 @@ body {
   background-color: rgb(146, 0, 0);
 }
 
-.dash-grid1 {
-  grid-row: 1/3;
-  grid-column: 2/4;
+.dash-colors-container{
+  grid-row: 2/6;
+  grid-column: 2/8;
   font-family: "poppins";
   font-weight: 400;
   font-size: medium;
   color: rgb(255, 255, 255);
 }
-.dash-grid2 {
-  grid-row: 1/3;
-  grid-column: 4/6;
-  font-family: "poppins";
-  font-weight: 400;
-  font-size: medium;
-  color: rgb(255, 255, 255);
-}
-.dash-grid3 {
-  grid-row: 3/5;
-  grid-column: 2/4;
-  font-family: "poppins";
-  font-weight: 400;
-  font-size: medium;
-  color: rgb(255, 255, 255);
-}
-.dash-grid4 {
-  grid-row: 3/5;
-  grid-column: 4/6;
-  font-family: "poppins";
-  font-weight: 400;
-  font-size: medium;
-  color: rgb(255, 255, 255);
-}
+
 .graffiti {
   width: 100vw;
-  grid-row: 2/7;
-  grid-column: 1/7;
+  grid-row: 1/7;
+  grid-column: 1/11;
   z-index: -1;
-  opacity: 0.2;
+
 }
 
 /* grid-row: 1/5;
@@ -119,7 +96,7 @@ body {
 }
 .dashboard-items {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 4px;
   margin-bottom: 0;
@@ -132,7 +109,7 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding-top: 70px;
   overflow: hidden;
 }
@@ -255,6 +232,13 @@ body {
   font-size: 30px;
   color: rgb(255, 255, 255);
 }
+.h3{
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  margin-top: 0px;
+}
 .purple {
   background-color: rgb(117, 0, 216);
   width: fit-content;
@@ -270,7 +254,7 @@ body {
 p {
   font-family: poppins;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 13px;
   max-width: 400px;
   text-align: left;
 }
@@ -285,4 +269,47 @@ p {
 
 .nice-quote {
   font-size: 3em;
+}
+.input-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.top-input-container{
+  margin-bottom: 80px;
+}
+.input-field-container {
+  display: flex;
+flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.first-name {
+  max-width: 140px;
+  height: 70px;
+  background-color: #181818;
+  color: #f9f9f9;
+  border: none;
+  font-size: medium;
+  input-security: auto;
+}
+
+.last-name {
+  max-width: 200px;
+  height: 70px;
+  background-color: #181818;
+  border: none;
+  font-size: medium;
+}
+.submit-btn {
+  width: 345px;
+  height: 70px;
+  background-color: #181818;
+  color: white;
+  border: none;
+  font-size: medium;
 }

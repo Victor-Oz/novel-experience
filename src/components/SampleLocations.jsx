@@ -13,13 +13,13 @@ function SampleLocations() {
             opacity: 0.5,
             scale: 0.97,
             y: 35,
-            filter: "brightness(0.5)",
+            filter: "brightness(0.4)",
           }}
           whileInView={{
             y: 0,
             opacity: 1,
             scale: 1,
-            filter: "brightness(0.8)",
+            filter: "brightness(0.6)",
           }}
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.5 }}
@@ -35,7 +35,7 @@ function SampleLocations() {
         <div className='experience-subcontainer'>
           <div className='h2 purple '>Highly Curated </div>
           <div className='h2 purple '> experiences</div>
-          <p>
+          <p >
             Unique restaurants, bars, art shows, performances and more, tailored
             to you.
           </p>
@@ -45,13 +45,13 @@ function SampleLocations() {
             opacity: 0.5,
             scale: 0.97,
             y: 35,
-            filter: "brightness(0.5)",
+            filter: "brightness(0.4)",
           }}
           whileInView={{
             y: 0,
             opacity: 1,
             scale: 1,
-            filter: "brightness(0.8)",
+            filter: "brightness(0.6)",
           }}
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.5 }}
@@ -74,10 +74,10 @@ function SampleLocations() {
         </div>
         <motion.img
           initial={{
-            opacity: 0.5,
+            opacity: 0.4,
             scale: 0.97,
             y: 35,
-            filter: "brightness(0.5)",
+            filter: "brightness(0.6)",
           }}
           whileInView={{
             y: 0,
@@ -107,13 +107,13 @@ function SampleLocations() {
             opacity: 0.5,
             scale: 0.97,
             y: 35,
-            filter: "brightness(0.6)",
+            filter: "brightness(0.4)",
           }}
           whileInView={{
             y: 0,
             opacity: 1,
             scale: 1,
-            filter: "brightness(0.8)",
+            filter: "brightness(0.6)",
           }}
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.5 }}
