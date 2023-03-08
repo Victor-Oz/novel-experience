@@ -15,7 +15,12 @@ function SampleLocations() {
             y: 15,
             filter: "brightness(0.5)",
           }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            filter: "brightness(0.8)",
+          }}
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.5 }}
           whileHover={{ scale: 1.03, filter: "brightness(1)" }}
@@ -27,13 +32,14 @@ function SampleLocations() {
       <motion.div
         className='chat experience-container'
         whileHover={{ opacity: 1 }}>
-        <div className='h2 purple '>Highly Curated </div>
-        <div className='h2 purple '> experiences</div>
-        <p>
-          Unique restaurants, bars, art shows, performances and more, tailored
-          to you.
-        </p>
-
+        <div className='experience-subcontainer'>
+          <div className='h2 purple '>Highly Curated </div>
+          <div className='h2 purple '> experiences</div>
+          <p>
+            Unique restaurants, bars, art shows, performances and more, tailored
+            to you.
+          </p>
+        </div>
         <motion.img
           initial={{
             opacity: 0.5,
@@ -41,7 +47,12 @@ function SampleLocations() {
             y: 15,
             filter: "brightness(0.5)",
           }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            filter: "brightness(0.8)",
+          }}
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.5 }}
           whileHover={{ scale: 1.03, filter: "brightness(1)" }}
@@ -53,13 +64,14 @@ function SampleLocations() {
       <motion.div
         className='chat experience-container'
         whileHover={{ opacity: 1 }}>
-        <div className='h2 red'>A new challenge </div>
-        <div className='h2 red'>Every monday</div>
-        <p>
-          Get weekly challenges based on the theme of the week. Delivered via
-          the mobile app.
-        </p>
-
+        <div className='experience-subcontainer'>
+          <div className='h2 red'>A new challenge </div>
+          <div className='h2 red'>Every monday</div>
+          <p>
+            Get weekly challenges based on the theme of the week. Delivered via
+            the mobile app.
+          </p>
+        </div>
         <motion.img
           initial={{
             opacity: 0.5,
@@ -67,7 +79,12 @@ function SampleLocations() {
             y: 15,
             filter: "brightness(0.5)",
           }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            filter: "brightness(0.8)",
+          }}
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.5 }}
           whileHover={{ scale: 1.03, filter: "brightness(1)" }}
@@ -80,10 +97,11 @@ function SampleLocations() {
       <motion.div
         className='chat experience-container'
         whileHover={{ opacity: 1 }}>
-        <div className='h2 purple'>All over </div>
-        <div className='h2 purple'>The Garden city</div>
-        <p>Discover new places in GRA , Olu Obasanjo road and Beyond</p>
-
+        <div className='experience-subcontainer'>
+          <div className='h2 purple'>All over </div>
+          <div className='h2 purple'>The Garden city</div>
+          <p>Discover new places in GRA , Olu Obasanjo road and Beyond</p>
+        </div>
         <motion.img
           initial={{
             opacity: 0.5,
@@ -91,11 +109,16 @@ function SampleLocations() {
             y: 15,
             filter: "brightness(0.6)",
           }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            filter: "brightness(0.8)",
+          }}
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.5 }}
           whileHover={{ scale: 1.03, filter: "brightness(1)" }}
-          src='/happygirl.jpg'
+          src='/happyman.jpg'
           alt='photograph of a man happy
         '
           className='chat-image'
