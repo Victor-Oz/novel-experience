@@ -12,7 +12,7 @@ function SampleLocations() {
           initial={{
             opacity: 0.5,
             scale: 0.97,
-            y: 15,
+            y: 35,
             filter: "brightness(0.5)",
           }}
           whileInView={{
@@ -44,7 +44,7 @@ function SampleLocations() {
           initial={{
             opacity: 0.5,
             scale: 0.97,
-            y: 15,
+            y: 35,
             filter: "brightness(0.5)",
           }}
           whileInView={{
@@ -76,7 +76,7 @@ function SampleLocations() {
           initial={{
             opacity: 0.5,
             scale: 0.97,
-            y: 15,
+            y: 35,
             filter: "brightness(0.5)",
           }}
           whileInView={{
@@ -106,7 +106,7 @@ function SampleLocations() {
           initial={{
             opacity: 0.5,
             scale: 0.97,
-            y: 15,
+            y: 35,
             filter: "brightness(0.6)",
           }}
           whileInView={{

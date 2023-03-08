@@ -163,7 +163,8 @@ body {
 .text-slab {
   font-size: 80px;
   white-space: nowrap;
-  font-family: "Anton";
+  font-family: "poppins";
+  font-weight: 700;
 }
 .slab-container {
   overflow: hidden;
@@ -217,10 +218,10 @@ body {
   margin: 6px;
 }
 .chat-gif {
-  border-radius: 30px;
+  border-radius: 15px;
   border: 2px solid black;
   margin: 6px;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .sample-locations-container {
@@ -276,6 +277,7 @@ p {
 .h2-head,
 .h2-foot {
   margin: 120px 20px;
+  text-align: center;
 }
 .wood {
   color: black;
