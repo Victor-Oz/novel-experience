@@ -1,5 +1,8 @@
 /** @format */
 import { motion } from "framer-motion";
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 function DashContainer() {
   return (
@@ -20,6 +23,7 @@ function DashContainer() {
         
         </div>
       </div>
+
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}

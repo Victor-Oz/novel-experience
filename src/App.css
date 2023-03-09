@@ -1,6 +1,8 @@
 /** @format */
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -71,10 +73,10 @@ body {
   background-color: rgb(146, 0, 0);
 }
 
-.dash-colors-container{
+.dash-colors-container {
   grid-row: 2/6;
   grid-column: 2/8;
-  font-family: "poppins";
+  font-family: "Poppins";
   font-weight: 400;
   font-size: medium;
   color: rgb(255, 255, 255);
@@ -85,7 +87,6 @@ body {
   grid-row: 1/7;
   grid-column: 1/11;
   z-index: -1;
-
 }
 
 /* grid-row: 1/5;
@@ -114,7 +115,7 @@ body {
   overflow: hidden;
 }
 .dash-button {
-  font-family: poppins;
+  font-family: "Poppins";
   font-size: medium;
   font-weight: 600;
   width: 180px;
@@ -140,7 +141,7 @@ body {
 .text-slab {
   font-size: 70px;
   white-space: nowrap;
-  font-family: "poppins";
+  font-family: "Poppins";
   font-weight: 700;
 }
 .slab-container {
@@ -228,12 +229,12 @@ body {
   max-width: 90vw;
 }
 .h2 {
-  font-family: "poppins";
+  font-family: "Poppins";
   font-weight: 500;
   font-size: 30px;
   color: rgb(255, 255, 255);
 }
-.h3{
+.h3 {
   font-family: "poppins";
   font-weight: 400;
   font-size: 21px;
@@ -253,7 +254,7 @@ body {
   padding: 0 12px;
 }
 p {
-  font-family: poppins;
+  font-family: "Poppins";
   font-weight: 300;
   font-size: 13px;
   max-width: 400px;
@@ -278,12 +279,12 @@ p {
   align-items: center;
   gap: 5px;
 }
-.top-input-container{
+.top-input-container {
   margin-bottom: 80px;
 }
 .input-field-container {
   display: flex;
-flex-flow: wrap;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
   gap: 5px;
