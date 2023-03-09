@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function SampleLocations() {
   return (
-    <div className='sample-locations-container'>
+    <div  className='sample-locations-container'>
       <h2 className='h2 h2-head'>
         A challenge that dares you to explore your city.
       </h2>
@@ -30,7 +30,7 @@ function SampleLocations() {
         />
       </motion.div>
       <motion.div
-        className='chat experience-container'
+        className='chat experience-container ' id="even"
         whileHover={{ opacity: 1 }}>
         <div className='experience-subcontainer'>
           <div className='h2 purple '>Highly Curated </div>
@@ -95,7 +95,7 @@ function SampleLocations() {
         />
       </motion.div>
       <motion.div
-        className='chat experience-container'
+        className='chat experience-container ' id="even"
         whileHover={{ opacity: 1 }}>
         <div className='experience-subcontainer'>
           <div className='h2 purple'>All over </div>
