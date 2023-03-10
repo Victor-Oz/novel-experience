@@ -1,9 +1,10 @@
 /** @format */
 import { motion } from "framer-motion";
+import * as Unicons from "@iconscout/react-unicons";
 
 function SampleLocations() {
   return (
-    <div  className='sample-locations-container'>
+    <div className='sample-locations-container'>
       <h2 className='h2 h2-head'>
         A challenge that dares you to explore your city.
       </h2>
@@ -30,12 +31,15 @@ function SampleLocations() {
         />
       </motion.div>
       <motion.div
-        className='chat experience-container ' id="even"
+        className='chat experience-container '
+        id='even'
         whileHover={{ opacity: 1 }}>
         <div className='experience-subcontainer'>
           <div className='h2 purple '>Highly Curated </div>
           <div className='h2 purple '> experiences</div>
-          <p >
+          <div className="location-unicons"> <Unicons.UilGlassMartini  size="60" color="white"  /></div>
+          <p>
+         
             Unique restaurants, bars, art shows, performances and more, tailored
             to you.
           </p>
@@ -65,8 +69,11 @@ function SampleLocations() {
         className='chat experience-container'
         whileHover={{ opacity: 1 }}>
         <div className='experience-subcontainer'>
+        
           <div className='h2 red'>A new challenge </div>
           <div className='h2 red'>Every monday</div>
+        
+        <div className="location-unicons"> <Unicons.UilRocket size="60" color="white" /></div>
           <p>
             Get weekly challenges based on the theme of the week. Delivered via
             the mobile app.
@@ -95,11 +102,13 @@ function SampleLocations() {
         />
       </motion.div>
       <motion.div
-        className='chat experience-container ' id="even"
+        className='chat experience-container '
+        id='even'
         whileHover={{ opacity: 1 }}>
         <div className='experience-subcontainer'>
           <div className='h2 purple'>All over </div>
           <div className='h2 purple'>The Garden city</div>
+          <div className="location-unicons"> <Unicons.UilMapMarkerAlt  size="60" color="white"  /></div> 
           <p>Discover new places in GRA , Olu Obasanjo road and Beyond</p>
         </div>
         <motion.img

@@ -6,6 +6,7 @@ import ChatBox from "../components/ChatBox";
 import Footer from "../components/Footer";
 import SampleLocations from "../components/SampleLocations";
 
+
 export default function Home() {
   return (
   <div>
