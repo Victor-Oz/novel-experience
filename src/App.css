@@ -83,12 +83,12 @@ body {
 }
 
 .graffiti {
-  height: 100vh;
+  height: 80vh;
   max-width: 1200px;
   grid-row: 1/7;
   grid-column: 1/11;
   z-index: -1;
-  object-fit: s;
+
 }
 
 /* grid-row: 1/5;
@@ -119,7 +119,7 @@ body {
   font-weight: 600;
   width: 180px;
   height: 50px;
-  margin: 50px;
+  margin-top: 50px;
 
   color: black;
   border: none;
@@ -142,20 +142,17 @@ body {
 }
 
 .text-slab1 {
-  font-size: 70px;
-  white-space: nowrap;
-  font-family: "Poppins";
-  font-weight: 700;
-}
-
-.text-slab2 ,.text-slab3{
   display: none;
 }
+
 
 .slab-container {
   overflow: hidden;
 }
+.chat-box-container {
+margin-top: 70px;
 
+}
 .chat-box-subcontainer {
   background-image: url(https://w0.peakpx.com/wallpaper/1005/226/HD-wallpaper-abstract-amoled-edge-galaxy-iphone-neon-note-pink-purple-samsung.jpg);
   background-size: cover;
@@ -340,15 +337,14 @@ p {
     flex-flow: row-reverse;
   }
 
-  .text-slab1 {
-  display: none;
-  }
+
+  .graffiti {
+    height: 92vh;
+    max-width: 1200px;
+    grid-row: 1/7;
+    grid-column: 1/11;
+    z-index: -1;
   
-  .text-slab2 ,.text-slab3{
-    font-size: 70px;
-    white-space: nowrap;
-    font-family: "Poppins";
-    font-weight: 700;
   }
 
   .experience-container {
@@ -389,6 +385,7 @@ p {
     display: flex;
     justify-content: center;
     max-height: 600px;
+  margin-top: 70px;
 
   }
  
@@ -421,6 +418,18 @@ p {
     display: flex;
     overflow: hidden;
   }
+  .text-slab1 {
+    display: block;
+    font-size: 90px;
+    white-space: nowrap;
+    font-family: "Poppins";
+ font-style: oblique;
+ font-weight: bolder;
+    margin-top: 20px;
+    color: rgb(235, 72, 77) ;
+
+  }
+
   .experience-container {
     margin: 0;
     gap: 20px;
