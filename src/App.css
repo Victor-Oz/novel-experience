@@ -15,7 +15,7 @@ body {
   background-color: rgb(0, 0, 0);
   color: #f9f9f9;
 }
-.pad{
+.pad {
   margin-top: 90px;
 }
 
@@ -26,54 +26,69 @@ body {
   margin-left: 10px;
   padding-left: 0;
   width: 120px;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0;
-  height: 5em;
-  box-shadow: o 4px 4px #f9f9f9;
+  margin-top: 10px;
+  top: 0px;
   position: fixed;
-  top: 0;
-  width: 100vw;
-  background-color: rgb(0, 0, 0);
-  z-index: 2;
 }
+.navbar {
+  width: 100%;
+  height: 80px;
 
-.nav ul {
-  margin: 0;
-  list-style: none;
+  background-color: #000000;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  height: 100;
-  color: inherit;
-  /* border: red 5px solid; */
-}
-
-.nav a {
-  padding: 0 2rem;
-  margin: 0;
-  color: inherit;
-  display: flex;
-  height: 100%;
   align-items: center;
-  text-decoration: none;
-  font-weight: bold;
-}
-.active {
-  /* background-color: rgb(38, 38, 38); */
+  transition: 0.5s all ease-in-out;
+  top: 0px;
+  position: fixed;
 }
 
-.svgmenu {
-  margin-right: 20px;
+.navbar .logo {
+  color: #d9d2c3;
+  font-size: 28px;
+  font-weight: 600;
 }
 
-.nav li:hover {
-  background-color: rgb(146, 0, 0);
+.navbar .links {
+  list-style: none;
+  display: none;
+  color: #d9d2c3;
+  cursor: pointer;
+}
+
+.navbar .links li {
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar .toggle-icon {
+  display: block;
+  color: #d9d2c3;
+  position: absolute;
+  top: 28px;
+  right: 20px;
+}
+.navbar.expanded {
+  height: 100vh;
+}
+
+.navbar.expanded .links {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.navbar.expanded .links li {
+  margin: 15px 0;
+  font-size: 24px;
 }
 
 .dash-colors-container {
@@ -277,7 +292,7 @@ p {
   color: black;
 }
 
-footer{
+footer {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -333,7 +348,6 @@ footer{
   color: white;
 }
 
-
 @media (min-width: 550px) {
   .grid-container {
     display: none;
@@ -358,8 +372,6 @@ footer{
     align-items: start;
     margin: 0 30px;
     gap: 30px;
-  }
-  :nth-child(1) {
   }
 
   .chat-image {
