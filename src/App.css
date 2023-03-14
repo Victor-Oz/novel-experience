@@ -44,31 +44,33 @@ body {
   z-index: 5;
 }
 
-.navbar .logo {
-  color: #d9d2c3;
-  font-size: 28px;
-  font-weight: 600;
-}
-
 .navbar .links {
+position: relative;
+top: -700px;
+right: 120px;
+
   list-style: none;
-  display: none;
-  color: #d9d2c3;
-  cursor: pointer;
+  transition-duration: 0.3s;
 }
 
 .navbar .links li {
-  margin: 0 15px;
-  font-size: 14px;
-  font-weight: 600;
+  margin: 15px 0;
+  font-size: 24px;
+  /* font-weight: 600; */
 }
 
 .navbar .toggle-icon {
+  cursor: pointer;
   display: block;
   color: #d9d2c3;
   position: absolute;
   top: 28px;
   right: 20px;
+}
+.navbar .toggle-icon :hover {
+  color: rgb(235, 72, 77);
+  scale: 1.04;
+  transition-duration: 0.2;
 }
 .navbar.expanded {
   height: 100vh;
@@ -90,6 +92,9 @@ body {
 .navbar.expanded .links li {
   margin: 15px 0;
   font-size: 24px;
+}
+.navbar.expanded .links li:hover {
+  color: rgb(235, 72, 77);
 }
 
 .dash-colors-container {
@@ -146,6 +151,7 @@ body {
 }
 .dash-button:hover {
   background-color: rgb(235, 72, 77);
+  transition-duration: 0.2s;
   color: white;
 }
 
@@ -347,6 +353,7 @@ footer {
 .submit-btn:hover {
   background-color: rgb(235, 72, 77);
   color: white;
+  transition-duration: 0.2s;
 }
 
 @media (min-width: 550px) {
