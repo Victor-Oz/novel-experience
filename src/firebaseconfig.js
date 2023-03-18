@@ -34,6 +34,8 @@ const config = {
   },
 };
 
+export default config
+
 initializeApp(config);
 
 // init services

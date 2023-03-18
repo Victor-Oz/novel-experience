@@ -5,10 +5,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import AuthProvider from "./Auth"
 
 function App() {
   return (
-    <>
+ <AuthProvider>
       <NavBar />
       <div className='container'>
         <Routes>
@@ -20,7 +21,7 @@ function App() {
        
     
       </div>
-    </>
+      </AuthProvider>
   );
 }
 
