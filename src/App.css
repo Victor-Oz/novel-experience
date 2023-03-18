@@ -16,7 +16,7 @@ body {
   color: #f9f9f9;
 }
 
-h1{
+h1 {
   font-family: "poppins";
 }
 .pad {
@@ -49,9 +49,9 @@ h1{
 }
 
 .navbar .links {
-position: relative;
-top: -700px;
-right: 120px;
+  position: relative;
+  top: -700px;
+  right: 120px;
 
   list-style: none;
   transition-duration: 0.3s;
@@ -101,9 +101,8 @@ right: 120px;
   color: rgb(235, 72, 77);
 }
 
-.profile-photo{
-  width: 30px;
-
+.profile-photo {
+  width: 27px;
   border-radius: 60px;
   position: absolute;
   top: 28px;
@@ -369,7 +368,7 @@ footer {
   transition-duration: 0.2s;
 }
 
-.account-container{
+.account-container {
   margin: 90px 50px;
 }
 

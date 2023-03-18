@@ -7,19 +7,21 @@ import About from "./pages/About";
 import Account from "./pages/Account";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import { Navigate } from 'react-router-dom';
 
 function App() {
   return (
     <>
         <AuthContextProvider>
       <NavBar />
-
+   
         <Routes>
-          <Route path='/Home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/Signin' element={<Signin />} />
           <Route path='/about' element={<About />} />
           <Route path='/Account' element={<Protected><Account /></Protected> } />
         </Routes>
+        
         </AuthContextProvider>
     
   
