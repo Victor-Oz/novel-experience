@@ -15,7 +15,18 @@ body {
   background-color: rgb(0, 0, 0);
   color: #f9f9f9;
 }
-
+button {
+  font-family: "Poppins";
+  font-size: large;
+  font-weight: 600;
+  width: 200px;
+  height: 60px;
+  align-self: center;
+  justify-self: center;
+  color: black;
+  border: none;
+  background-color: white;
+}
 h1 {
   font-family: "poppins";
 }
