@@ -10,16 +10,16 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className='container'>
+
         <Routes>
           <Route path='/Home' element={<Home />} />
           <Route path='/pricing' element={<Pricing />} />
           <Route path='/about' element={<About />} />
-          <Route path='/about' element={<About />} />
+ 
         </Routes>
        
     
-      </div>
+  
     </>
   );
 }

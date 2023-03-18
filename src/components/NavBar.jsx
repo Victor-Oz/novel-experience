@@ -16,7 +16,7 @@ export default function Navbar() {
   };
   return (
     <nav className={toggle ? "navbar expanded" : "navbar"}>
-      <NavLink to='/Home' activeClassname='active' id='site-title'>
+      <NavLink to='/Home' activeclassname='active' id='site-title'>
         <img     src='/logo.png'
           alt='site logo ' id='site-title' />
       </NavLink>
