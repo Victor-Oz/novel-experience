@@ -1,6 +1,6 @@
 /** @format */
 import React from "react";
-import * as Unicons from "@iconscout/react-unicons";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function DashContainer() {
@@ -21,8 +21,9 @@ function DashContainer() {
           <div className=' purple '>no questions asked.</div>
         </div>
       </div>
-
-      <button className='dash-button'>Take the Challenge</button>
+      <Link to="/signin">
+        <button className='dash-button'>Take the Challenge</button>
+      </Link>
     </div>
   );
 }

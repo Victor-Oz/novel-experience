@@ -15,6 +15,10 @@ body {
   background-color: rgb(0, 0, 0);
   color: #f9f9f9;
 }
+
+h1{
+  font-family: "poppins";
+}
 .pad {
   margin-top: 90px;
 }
@@ -95,6 +99,15 @@ right: 120px;
 }
 .navbar.expanded .links li:hover {
   color: rgb(235, 72, 77);
+}
+
+.profile-photo{
+  width: 30px;
+
+  border-radius: 60px;
+  position: absolute;
+  top: 28px;
+  right: 60px;
 }
 
 .dash-colors-container {
@@ -354,6 +367,10 @@ footer {
   background-color: rgb(235, 72, 77);
   color: white;
   transition-duration: 0.2s;
+}
+
+.account-container{
+  margin: 90px 50px;
 }
 
 @media (min-width: 550px) {
