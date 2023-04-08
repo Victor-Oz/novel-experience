@@ -1,11 +1,8 @@
-# sitout
+# Novel Experience
 
 <h1>https://novelexperience.netlify.app</hi>
 
-<html>
-<head>
-	<title>Novel Experience</title>
-</head>
+
 <body>
 	<h1>Website for Recommending New Locations</h1>
 	<p>This is a website built with React and Firebase that recommends new locations for users to visit weekly based on their locations. This readme file provides information on how to use the website and how it is built.</p>
