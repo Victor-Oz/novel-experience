@@ -25,7 +25,7 @@ const Signin = () => {
       
       <h1 className='text-center text-3xl font-bold py-8'>Sign in</h1>
       <div className='max-w-[240px] m-auto py-4'>
-        <button className='bitton' onClick={handleGoogleSignIn}>Login With Google</button>
+        <button className='button' onClick={handleGoogleSignIn}>Login With Google</button>
       </div>
     </div>
   );

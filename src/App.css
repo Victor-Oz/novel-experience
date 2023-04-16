@@ -54,18 +54,19 @@ h1 {
   justify-content: space-between;
   align-items: center;
   transition: 0.5s all ease-in-out;
-  top: 0px;
+left: -900;
   position: fixed;
   z-index: 5;
+  
 }
 
 .navbar .links {
   position: relative;
-  top: -700px;
-  right: 120px;
+
+  left: -320px;
 
   list-style: none;
-  transition-duration: 0.3s;
+  transition-duration: 0.8s;
 }
 
 .navbar .links li {
@@ -89,6 +90,8 @@ h1 {
 }
 .navbar.expanded {
   height: 100vh;
+  width: 40vw;
+  background-color: rgb(235, 72, 77);
 }
 
 .navbar.expanded .links {
@@ -109,15 +112,17 @@ h1 {
   font-size: 24px;
 }
 .navbar.expanded .links li:hover {
-  color: rgb(235, 72, 77);
+  color: rgb(0, 0, 0);
+
 }
 
 .profile-photo {
-  width: 27px;
+  width: 34px;
   border-radius: 60px;
   position: absolute;
   top: 28px;
   right: 60px;
+  border:rgb(117, 0, 216) 2px solid ;
 }
 
 .dash-colors-container {
@@ -199,6 +204,8 @@ h1 {
 .slab-container {
   overflow: hidden;
 }
+
+
 .chat-box-container {
   margin-top: 70px;
 }
@@ -208,6 +215,10 @@ h1 {
   padding: 50px 0;
   box-shadow: 24px 60px 20px -40px inset rgb(0, 0, 0);
   overflow: hidden;
+}
+
+.phone{
+  display: none;
 }
 .left-chat-container {
   display: flex;
@@ -431,13 +442,8 @@ footer {
   }
 }
 @media (min-width: 950px) {
-  .chat-box-container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    max-height: 600px;
-    margin-top: 70px;
-  }
+
+
 
   .dash-colors-container {
     grid-row: 2/6;
@@ -487,6 +493,35 @@ footer {
     width: 600px;
     max-width: 100vw;
   }
+  .chat-box-container {
+    margin-top: 70px;
+  }
+  .chat-box-subcontainer {
+    grid-row: 1/6;
+    grid-column: 8/12;
+    max-width: fit-content;
+    width: 450px;
+    border-radius: 30PX;
+    height: 700PX;
+
+  }
+  
+  .phone{
+    display: block; 
+    max-height: 750px;
+    grid-row: 1/6;
+  
+    grid-column: 7/11;
+    z-index: 2;
+   }
+   .chat-box-container {
+     align-items: center;
+     display: grid;
+     grid-template-columns: repeat(18, 1fr);
+     grid-template-rows: repeat(6, 1fr);
+     justify-content: center;
+  
+   }
   .h2 {
     font-weight: 600;
     font-size: 30px;

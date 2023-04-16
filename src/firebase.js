@@ -7,12 +7,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyA35iFovB6aWA6J0TgBESh9L6Tr3HqB9cw",
-    authDomain: "dojo-c7eef.firebaseapp.com",
-    projectId: "dojo-c7eef",
-    storageBucket: "dojo-c7eef.appspot.com",
-    messagingSenderId: "568680566390",
-    appId: "1:568680566390:web:10c99a8d2151884dd01957"
+  apiKey: "AIzaSyD0etjKtN-KII3XEffxR3bNbFsONjzmvsg",
+  authDomain: "novel-experience-4f69a.firebaseapp.com",
+  projectId: "novel-experience-4f69a",
+  storageBucket: "novel-experience-4f69a.appspot.com",
+  messagingSenderId: "1021894391686",
+  appId: "1:1021894391686:web:dd64ea05c2ee4f3a5fde07"
   };
 
 // Initialize Firebase

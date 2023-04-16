@@ -4,7 +4,9 @@ import { motion, useScroll } from "framer-motion";
 function ChatBox() {
   return (
     <div className="chat-box-container">
+    <img className="phone" src="src\assets\iphone.png" alt="" />
     <div className='chat-box-subcontainer'>
+  
       <motion.div
         initial={{ x: -40, opacity: 0.5, scale: 0.9 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
