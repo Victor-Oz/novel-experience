@@ -11,7 +11,7 @@ function ChatBox() {
        transition={{ delay: 0.3 }}
        className="giffy" src="https://media.tenor.com/fexGU0GRoB4AAAAC/its-work-a-try-mr-beast.gif" alt="" />
       <div className="phonecase">
-    <img className="phone" src="src\assets\iphone.png" alt="" />
+    <img className="phone" src="public\iphone.png" alt="" />
     <div className='chat-box-subcontainer'>
   
       <motion.div
