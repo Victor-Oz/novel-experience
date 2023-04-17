@@ -208,7 +208,10 @@ top: -900;
   overflow: hidden;
 }
 
+.giffy{
 
+  display: none;
+}
 .chat-box-container {
   margin-top: 60px;
 }
@@ -504,7 +507,7 @@ footer {
   }
 
   .giffy{
-
+    display: block;
     max-height:220px ;
     max-width: 370px;
     padding: 1px;
