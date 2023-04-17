@@ -4,6 +4,8 @@ import { motion, useScroll } from "framer-motion";
 function ChatBox() {
   return (
     <div className="chat-box-container">
+      <img className="giffy" src="src\assets\ted.webp" alt="" />
+      <div className="phonecase">
     <img className="phone" src="src\assets\iphone.png" alt="" />
     <div className='chat-box-subcontainer'>
   
@@ -37,6 +39,8 @@ function ChatBox() {
       
       </motion.div>
     </div>
+    </div>
+    <img className="giffy" src="src\assets\drake.webp" alt="" />
     </div>
   );
 }
