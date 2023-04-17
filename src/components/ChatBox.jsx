@@ -4,7 +4,12 @@ import { motion, useScroll } from "framer-motion";
 function ChatBox() {
   return (
     <div className="chat-box-container">
-      <img className="giffy" src="src\assets\ted.webp" alt="" />
+      <motion.img
+       initial={{ x: -200, opacity: 0.5, }}
+       whileInView={{ x: 0, opacity: 1, }}
+       viewport={{ once: false}}
+       transition={{ delay: 0.3 }}
+       className="giffy" src="https://media.tenor.com/fexGU0GRoB4AAAAC/its-work-a-try-mr-beast.gif" alt="" />
       <div className="phonecase">
     <img className="phone" src="src\assets\iphone.png" alt="" />
     <div className='chat-box-subcontainer'>
@@ -40,7 +45,12 @@ function ChatBox() {
       </motion.div>
     </div>
     </div>
-    <img className="giffy" src="src\assets\drake.webp" alt="" />
+    <motion.img 
+     initial={{ x: 200, opacity: 0.5, }}
+     whileInView={{ x: 0, opacity: 1, }}
+     viewport={{ once: false}}
+     transition={{ delay: 0.2 , duration:0.4 ,}}
+    className="giffy" src="https://media.tenor.com/0uiKObTeltIAAAAC/changes-drake.gif" alt="" />
     </div>
   );
 }

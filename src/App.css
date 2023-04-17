@@ -54,7 +54,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   transition: 0.5s all ease-in-out;
-left: -900;
+top: -900;
   position: fixed;
   z-index: 5;
   
@@ -63,7 +63,7 @@ left: -900;
 .navbar .links {
   position: relative;
 
-  left: -320px;
+  top: -320px;
 
   list-style: none;
   transition-duration: 0.8s;
@@ -89,20 +89,20 @@ left: -900;
   transition-duration: 0.2;
 }
 .navbar.expanded {
-  height: 100vh;
-  width: 40vw;
-  background-color: rgb(235, 72, 77);
+  height: 30vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
 }
 
 .navbar.expanded .links {
   position: absolute;
-  top: 120px;
+  top: 70px;
   left: 0;
-  right: 120px;
+  right:0;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   opacity: 1;
 }
@@ -523,7 +523,6 @@ footer {
   .phonecase{
     align-items: center;
     display: grid;
- 
     grid-template-rows: repeat(6, 1fr);
     justify-content: center;
   }
