@@ -29,10 +29,10 @@ export default function Navbar() {
         {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={28} />}
       </div>
       <ul className='links'>
-      <li> <Link to="account">Account</Link> </li>
+      <li> <Link id="link" to="account">Account</Link> </li>
         <li>About</li>
         <li>Portfolio</li>
-        <li> <Link to="signin">Sign In </Link> </li>
+        <li> <Link id="link" to="signin">Sign In </Link> </li>
         
       </ul>
     </nav>
