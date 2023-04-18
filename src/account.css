@@ -1,0 +1,27 @@
+.account-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ flex-flow: column;
+ gap: 60px;
+
+}
+
+.account-profile-photo{
+  display: block;
+  margin:  auto;
+  width: 60vw;
+  max-width: 100px;
+  height: auto;
+}
+
+.account-greeting{
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  width: 700px;
+
+  text-align: center;
+}

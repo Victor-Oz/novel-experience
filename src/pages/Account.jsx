@@ -2,6 +2,7 @@ import React from 'react';
 import { UserAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
+
 const Account = () => {
   const { logOut, user } = UserAuth();
 
@@ -17,11 +18,11 @@ const Account = () => {
     <div className='account-container'>
 
       <div>
-        <p className='h2'>Welcome, {user?.displayName}</p>
-     
+        <p className='account-greeting'>Welcome, {user?.displayName}</p>
+        <img className='account-profile-photo' src= {user?.photoURL} alt=""/ >
 
       </div>
-      <button onClick={handleSignOut} className='signin-button'>
+      <button onClick={handleSignOut} className='sign-in-button'>
         Logout
       </button>
     </div>

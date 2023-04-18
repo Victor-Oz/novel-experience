@@ -24,8 +24,8 @@ const Signin = () => {
     <div className='signin-page'>
       
   
-      <div className='container'>
-      <img src="/welcome.jpg" alt="Google logo" class="logo-image"/>
+      <div className='sign-in-container'>
+      <img src="/welcome.jpg" alt="Google logo" class="sign-in-image"/>
         <button className='sign-in-button' onClick={handleGoogleSignIn}>Get Started With Google</button>
       </div>
     </div>
