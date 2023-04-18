@@ -1,0 +1,36 @@
+.signin-page{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.container{
+    margin-top: 70px;
+    display: flex;
+    flex-flow: column ;
+    align-items: space-around;
+    gap: 20px;
+}
+.logo-image {
+  display: block;
+  margin: 0 auto;
+  width: 60vw;
+  max-width: 700px;
+  height: auto;
+}
+.sign-in-button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+ 
+  transition:  0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #2953ad;
+  scale: 1.05;
+}

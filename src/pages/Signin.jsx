@@ -21,11 +21,12 @@ const Signin = () => {
   }, [user]);
 
   return (
-    <div>
+    <div className='signin-page'>
       
-      <h1 className='text-center text-3xl font-bold py-8'>Sign in</h1>
-      <div className='max-w-[240px] m-auto py-4'>
-        <button className='button' onClick={handleGoogleSignIn}>Login With Google</button>
+  
+      <div className='container'>
+      <img src="public\welcome.jpg" alt="Google logo" class="logo-image"/>
+        <button className='sign-in-button' onClick={handleGoogleSignIn}>Login With Google</button>
       </div>
     </div>
   );

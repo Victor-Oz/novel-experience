@@ -5,12 +5,16 @@ function ChatBox() {
   return (
     <div className="chat-box-container">
       <motion.img
-       initial={{ x: -200, opacity: 0.5, }}
-       whileInView={{ x: 0, opacity: 1, }}
+          initial={{  opacity: 0.5,  scale: 0.4 }}
+          whileInView={{opacity: 1,  scale: 1 }}
        viewport={{ once: false}}
        transition={{ delay: 0.3 }}
        className="giffy" src="https://media.tenor.com/fexGU0GRoB4AAAAC/its-work-a-try-mr-beast.gif" alt="" />
-      <div className="phonecase">
+      <motion.div    
+       initial={{  opacity: 0.5,  y:150 }}
+       whileInView={{opacity: 1,  y: 0 }}
+       transition={{ delay: 0.3 }}
+       className="phonecase">
     <img className="phone" src="https://firebasestorage.googleapis.com/v0/b/novel-experience-4f69a.appspot.com/o/pngwing.com.png?alt=media&token=703c0320-7d63-4d88-aff5-c1c4598125d6" alt="" />
     <div className='chat-box-subcontainer'>
   
@@ -34,7 +38,7 @@ function ChatBox() {
         <div className='right-chat '>Maybe some other time </div>
       </motion.div>
       <motion.div
-        initial={{ x: -40, opacity: 0.5, scale: 0.9 }}
+        initial={{ x: -40, opacity: 0.5 , scale: 0.9 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
         viewport={{ once: false }}
         transition={{ delay: 0.7 }}
@@ -44,10 +48,10 @@ function ChatBox() {
       
       </motion.div>
     </div>
-    </div>
+    </motion.div>
     <motion.img 
-     initial={{ x: 200, opacity: 0.5, }}
-     whileInView={{ x: 0, opacity: 1, }}
+     initial={{  opacity: 0.5,  scale: 0.4 }}
+     whileInView={{opacity: 1,  scale: 1 }}
      viewport={{ once: false}}
      transition={{ delay: 0.2 , duration:0.4 ,}}
     className="giffy" src="https://media.tenor.com/0uiKObTeltIAAAAC/changes-drake.gif" alt="" />

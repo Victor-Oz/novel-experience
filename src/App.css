@@ -27,6 +27,9 @@ button {
   border: none;
   background-color: white;
 }
+signin-button{
+  background-color: white;
+}
 h1 {
   font-family: "poppins";
 }
@@ -112,13 +115,13 @@ top: -900;
 
 
 
-.navbar.expanded .links li , #link{
+.navbar.expanded .links li , #Link{
   margin: 15px 0;
   font-size: 24px;
   text-decoration: none;
   color: white;
 }
-.navbar.expanded .links li:hover ,#link:hover {
+.navbar.expanded .links li:hover ,#Link:hover {
   color: rgb(235, 72, 77);
   cursor: pointer;
 
