@@ -92,8 +92,8 @@ top: -900;
   transition-duration: 0.2;
 }
 .navbar.expanded {
-  height: 30vh;
-  width: 100vw;
+  height: 100vh;
+  width: 45vw;
   background-color: rgb(0, 0, 0);
 }
 
@@ -104,7 +104,7 @@ top: -900;
   right:0;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   opacity: 1;
@@ -128,7 +128,7 @@ top: -900;
 }
 
 .profile-photo {
-  width: 34px;
+  width: 27px;
   border-radius: 60px;
   position: absolute;
   top: 28px;
