@@ -25,7 +25,7 @@ const Signin = () => {
       
   
       <div className='container'>
-      <img src="public\welcome.jpg" alt="Google logo" class="logo-image"/>
+      <img src="/welcome.jpg" alt="Google logo" class="logo-image"/>
         <button className='sign-in-button' onClick={handleGoogleSignIn}>Login With Google</button>
       </div>
     </div>

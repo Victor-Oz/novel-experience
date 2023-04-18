@@ -9,13 +9,13 @@ function ChatBox() {
           whileInView={{opacity: 1,  scale: 1 }}
        viewport={{ once: false}}
        transition={{ delay: 0.3 }}
-       className="giffy" src="https://media.tenor.com/fexGU0GRoB4AAAAC/its-work-a-try-mr-beast.gif" alt="" />
+       className="giffy" src="/beast.gif" alt="" />
       <motion.div    
        initial={{  opacity: 0.5,  y:150 }}
        whileInView={{opacity: 1,  y: 0 }}
        transition={{ delay: 0.3 }}
        className="phonecase">
-    <img className="phone" src="https://firebasestorage.googleapis.com/v0/b/novel-experience-4f69a.appspot.com/o/pngwing.com.png?alt=media&token=703c0320-7d63-4d88-aff5-c1c4598125d6" alt="" />
+    <img className="phone" src="/iphone.png" alt="" />
     <div className='chat-box-subcontainer'>
   
       <motion.div
@@ -54,7 +54,7 @@ function ChatBox() {
      whileInView={{opacity: 1,  scale: 1 }}
      viewport={{ once: false}}
      transition={{ delay: 0.2 , duration:0.4 ,}}
-    className="giffy" src="https://media.tenor.com/0uiKObTeltIAAAAC/changes-drake.gif" alt="" />
+    className="giffy" src="/drake.webp" alt="" />
     </div>
   );
 }
