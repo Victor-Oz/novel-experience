@@ -23,7 +23,7 @@ export default function Navbar() {
       <NavLink to='/' id='site-title' className="site-title">
         <img     src='/logo.png' alt='site logo ' id='site-title' />
       </NavLink>
-      <Link id="Link" to="account"> <img className='profile-photo' src= {user?.photoURL} alt="" ></img></Link>
+      <Link to="account"> <img className='profile-photo' src= {user?.photoURL} alt="" ></img></Link>
       <div className='toggle-icon' onClick={handleToggle}>
         {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={28} />}
       </div>

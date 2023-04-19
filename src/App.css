@@ -2,12 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+:root {
+  --blue: #3772ff;
+  --yellow: #df2935;
+}
 * {
   box-sizing: border-box;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 1em #0710bfaa);
+  filter: drop-shadow(0 0 1em var(--blue));
 }
 
 body {
@@ -91,7 +94,7 @@ h1 {
   right: 20px;
 }
 .navbar .toggle-icon :hover {
-  color: rgb(235, 72, 77);
+  color: var(--yellow);
   scale: 1.04;
   transition-duration: 0.2;
 }
@@ -124,7 +127,7 @@ h1 {
   color: white;
 }
 .navbar.expanded .links li:hover ,#Link:hover {
-  color: rgb(235, 72, 77);
+  color: var(--yellow);
   cursor: pointer;
   scale: 1.1;
 
@@ -139,6 +142,9 @@ h1 {
   text-decoration: none;
 
 
+}
+.profile-photo:hover{
+  scale: 1.1;
 }
 
 .dash-colors-container {
@@ -191,12 +197,12 @@ h1 {
   justify-self: center;
   color: white;
   border: none;
-  background-color:  rgb(117, 0, 216);
+  background-color:  var(--blue);
   box-shadow: inset 0px -5px 7px 5px rgba(0, 0, 0, 0.25);
 
 }
 .dash-button:hover {
-  background-color: rgb(235, 72, 77);
+  background-color: var(--yellow);
   box-shadow: inset 0px 6px 7px 5px rgba(0, 0, 0, 0.25);
   transition-duration: 0.4s;
   color: white;
@@ -232,7 +238,7 @@ h1 {
   margin-top: 60px;
 }
 .chat-box-subcontainer {
-  background-image: url(https://w0.peakpx.com/wallpaper/1005/226/HD-wallpaper-abstract-amoled-edge-galaxy-iphone-neon-note-pink-purple-samsung.jpg);
+  background-image: url(/hart.jpg);
   background-size: cover;
   padding: 50px 0;
   box-shadow: 24px 60px 20px -40px inset rgb(0, 0, 0);
@@ -328,13 +334,13 @@ h1 {
   margin-top: 0px;
 }
 .purple {
-  background-color: rgb(117, 0, 216);
+  background-color:var(--blue);
   width: fit-content;
   margin: 3px 0px;
   padding: 0 12px;
 }
 .red {
-  background-color: rgb(235, 72, 77);
+  background-color:var(--yellow);
   width: fit-content;
   margin: 3px 0px;
   padding: 0 12px;
@@ -407,7 +413,7 @@ footer {
   font-size: medium;
 }
 .submit-btn:hover {
-  background-color: rgb(235, 72, 77);
+  background-color: var(--yellow);
   color: white;
   transition-duration: 0.2s;
 }
@@ -527,7 +533,7 @@ footer {
     max-height:220px ;
     max-width: 370px;
     padding: 1px;
-    border: 5px solid  rgb(117, 0, 216);
+    border: 5px solid var(--blue);
 
   }
   .chat-box-subcontainer {
