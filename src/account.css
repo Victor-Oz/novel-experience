@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   flex-flow: column;
-  gap: 30px;
+  gap: 5px;
 }
 
 .account-profile-photo {
@@ -34,14 +34,14 @@
   font-family: "Poppins";
   font-weight: 500;
   font-size: 30px;
-  color: var(--red);
+  color: white;
 }
 .week-location-img-container {
   float: right;
 }
 .week-location-img {
-  height: 300px;
-  width: 300px;
+  height: 310px;
+  width: 310px;
   object-fit: cover;
   margin: 10px;
 }

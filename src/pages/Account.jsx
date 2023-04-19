@@ -15,14 +15,12 @@ const Account = () => {
 
   return (
     <div className="account-container">
-      <div className="account-greeting">Welcome, {user?.displayName}</div>
-      <img className="account-profile-photo" src={user?.photoURL} alt="" />
+      <div className="account-greeting red">Welcome, {user?.displayName}</div>
 
-      <div className="account-maintext">This weeks location is Asian Town </div>
-
-      <div className="account-subtext">
-        38 Forces Ave, Old GRA 500101, Port Harcourt, Rivers
+      <div className="account-maintext purple">
+        This weeks location is Asia Town{" "}
       </div>
+
       <div className="week-location-img-container">
         <img className="week-location-img" src="/asia1.jpg" alt="" />
         <img className="week-location-img" src="/asia2.jpg" alt="" />
@@ -42,7 +40,10 @@ const Account = () => {
         </video>
         <img className="week-location-img" src="/asia8.JPG" alt="" />
       </div>
-      <div className="account-maintext">Geolocation </div>
+      <div className="account-maintext red">Geolocation </div>
+      <div className="account-subtext">
+        38 Forces Ave, Old GRA 500101, Port Harcourt, Rivers
+      </div>
       <NewLocation />
 
       <button onClick={handleSignOut} className="sign-in-button">
