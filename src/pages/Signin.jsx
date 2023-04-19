@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { UserAuth } from '../context/AuthContext'
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { UserAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Signin = () => {
   const { googleSignIn, user } = UserAuth();
@@ -16,17 +16,17 @@ const Signin = () => {
 
   useEffect(() => {
     if (user != null) {
-      navigate('/account');
+      navigate("/account");
     }
   }, [user]);
 
   return (
-    <div className='signin-page'>
-      
-  
-      <div className='sign-in-container'>
-      <img src="/welcome.jpg" alt="Google logo" class="sign-in-image"/>
-        <button className='sign-in-button' onClick={handleGoogleSignIn}>Get Started With Google</button>
+    <div className="signin-page">
+      <div className="sign-in-container">
+        <img src="/welcome.jpg" alt="Google logo" class="sign-in-image" />
+        <button className="sign-in-button" onClick={handleGoogleSignIn}>
+          Get Started With Google
+        </button>
       </div>
     </div>
   );

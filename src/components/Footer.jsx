@@ -1,15 +1,15 @@
 /** @format */
-import InfoCollector from "./InfoCollector";
-import * as Unicons from '@iconscout/react-unicons';
+import InfoCollector from "../components/InfoCollector";
+import * as Unicons from "@iconscout/react-unicons";
 
 function Footer() {
   return (
     <footer>
-      
-      <InfoCollector/>
+      <InfoCollector />
 
       <div className="contact-container">
-        <p className="email">victorozurumba12@gmail.com  </p>
+        <p className="email">victorozurumba12@gmail.com </p>
+
         {/* <p className="terms">terms and conditions</p> */}
       </div>
     </footer>

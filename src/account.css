@@ -1,27 +1,43 @@
-.account-container{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
- flex-flow: column;
- gap: 60px;
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+  gap: 30px;
 
 }
 
-.account-profile-photo{
+.account-profile-photo {
+
   display: block;
-  margin:  auto;
+  margin: auto;
   width: 60vw;
   max-width: 100px;
   height: auto;
 }
 
-.account-greeting{
+.account-greeting {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+
+
+  text-align: center;
+}
+
+.account-maintext{
   font-family: "Poppins";
   font-weight: 500;
   font-size: 30px;
-  color: rgb(255, 255, 255);
-  width: 700px;
-
-  text-align: center;
+}
+.week-location-img-container{
+  float: right;
+}
+.week-location-img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: 10px;
 }

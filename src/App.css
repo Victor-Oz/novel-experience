@@ -30,7 +30,7 @@ button {
   border: none;
   background-color: white;
 }
-signin-button{
+signin-button {
   background-color: white;
 }
 h1 {
@@ -64,7 +64,6 @@ h1 {
 
   position: fixed;
   z-index: 5;
-  
 }
 
 .navbar .links {
@@ -82,7 +81,6 @@ h1 {
 .navbar .links li {
   margin: 15px 0;
   font-size: 24px;
-
 }
 
 .navbar .toggle-icon {
@@ -108,29 +106,26 @@ h1 {
   position: absolute;
   top: 70px;
   width: 100%;
-  display: flex ;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   opacity: 1;
   text-decoration: none;
-
-
 }
 
-
-
-.navbar.expanded .links li , #Link{
+.navbar.expanded .links li,
+#Link {
   margin: 15px 0;
   font-size: 24px;
   text-decoration: none;
   color: white;
 }
-.navbar.expanded .links li:hover ,#Link:hover {
+.navbar.expanded .links li:hover,
+#Link:hover {
   color: var(--yellow);
   cursor: pointer;
   scale: 1.1;
-
 }
 
 .profile-photo {
@@ -140,10 +135,8 @@ h1 {
   top: 28px;
   right: 60px;
   text-decoration: none;
-
-
 }
-.profile-photo:hover{
+.profile-photo:hover {
   scale: 1.1;
 }
 
@@ -197,9 +190,8 @@ h1 {
   justify-self: center;
   color: white;
   border: none;
-  background-color:  var(--blue);
+  background-color: var(--blue);
   box-shadow: inset 0px -5px 7px 5px rgba(0, 0, 0, 0.25);
-
 }
 .dash-button:hover {
   background-color: var(--yellow);
@@ -230,8 +222,7 @@ h1 {
   overflow: hidden;
 }
 
-.giffy{
-
+.giffy {
   display: none;
 }
 .chat-box-container {
@@ -245,7 +236,7 @@ h1 {
   overflow: hidden;
 }
 
-.phone{
+.phone {
   display: none;
 }
 .left-chat-container {
@@ -334,13 +325,13 @@ h1 {
   margin-top: 0px;
 }
 .purple {
-  background-color:var(--blue);
+  background-color: var(--blue);
   width: fit-content;
   margin: 3px 0px;
   padding: 0 12px;
 }
 .red {
-  background-color:var(--yellow);
+  background-color: var(--yellow);
   width: fit-content;
   margin: 3px 0px;
   padding: 0 12px;
@@ -470,9 +461,6 @@ footer {
   }
 }
 @media (min-width: 950px) {
-
-
-
   .dash-colors-container {
     grid-row: 2/6;
     grid-column: 3/8;
@@ -528,38 +516,36 @@ footer {
     justify-content: space-evenly;
   }
 
-  .giffy{
+  .giffy {
     display: block;
-    max-height:220px ;
+    max-height: 220px;
     max-width: 370px;
     padding: 1px;
     border: 5px solid var(--blue);
-
   }
   .chat-box-subcontainer {
     grid-row: 1/7;
     grid-column: 2/18;
     max-width: fit-content;
     width: 450px;
-    border-radius: 30PX;
-    height: 700PX;
-
+    border-radius: 30px;
+    height: 700px;
   }
-  .phonecase{
+  .phonecase {
     align-items: center;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     justify-content: center;
   }
 
-  .phone{
-    display: block; 
+  .phone {
+    display: block;
     max-height: 750px;
     grid-row: 1/7;
-    grid-column:1/8;
+    grid-column: 1/8;
     z-index: 2;
-   }
- 
+  }
+
   .h2 {
     font-weight: 600;
     font-size: 30px;
