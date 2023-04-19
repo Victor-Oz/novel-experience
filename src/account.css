@@ -1,3 +1,4 @@
+
 .account-container {
   display: flex;
   justify-content: center;
@@ -5,11 +6,9 @@
   text-align: center;
   flex-flow: column;
   gap: 30px;
-
 }
 
 .account-profile-photo {
-
   display: block;
   margin: auto;
   width: 60vw;
@@ -21,21 +20,26 @@
   font-family: "Poppins";
   font-weight: 500;
   font-size: 20px;
-  color: rgb(255, 255, 255);
-
+  color: white;
 
   text-align: center;
 }
+.account-subtext {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
 
-.account-maintext{
+}
+.account-maintext {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 30px;
+  color: var(--red);
 }
-.week-location-img-container{
+.week-location-img-container {
   float: right;
 }
-.week-location-img{
+.week-location-img {
   height: 300px;
   width: 300px;
   object-fit: cover;
