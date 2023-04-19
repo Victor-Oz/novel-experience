@@ -20,18 +20,17 @@ export default function Navbar() {
   };
   return (
     <nav className={toggle ? "navbar expanded" : "navbar"}>
-      <NavLink to='/' id='site-title'>
-        <img     src='/logo.png'
-          alt='site logo ' id='site-title' />
+      <NavLink to='/' id='site-title' className="site-title">
+        <img     src='/logo.png' alt='site logo ' id='site-title' />
       </NavLink>
-      <img className='profile-photo' src= {user?.photoURL} alt="" ></img>
+      <Link id="Link" to="account"> <img className='profile-photo' src= {user?.photoURL} alt="" ></img></Link>
       <div className='toggle-icon' onClick={handleToggle}>
         {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={28} />}
       </div>
       <ul className='links'>
-      <li> <Link id="Link" to="account">Account</Link> </li>
+
         <li>About</li>
-        <li>Portfolio</li>
+        {/* <li>Portfolio</li> */}
         <li> <Link id="Link" to="signin">Sign In </Link> </li>
         
       </ul>
