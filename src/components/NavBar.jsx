@@ -29,7 +29,9 @@ export default function Navbar() {
         {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={28} />}
       </div>
       <ul className="links">
-        <li>About</li>
+        <li>
+          <a id="Link"  href="https://github.com/Victor-Oz"> Github</a>
+        </li>
         {/* <li>Portfolio</li> */}
         <li>
           {" "}
