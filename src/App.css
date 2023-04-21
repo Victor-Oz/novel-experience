@@ -370,24 +370,26 @@ footer {
 }
 .input-field-container {
   display: flex;
-  flex-flow: wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  width: 400px;
 }
 
 .first-name {
-  max-width: 140px;
+
   height: 70px;
   background-color: #181818;
   color: #f9f9f9;
   border: none;
   font-size: medium;
   input-security: auto;
+  width: 340px
 }
 
 .last-name {
-  width: 200px;
+  width: 340px;
   height: 70px;
   background-color: #181818;
   border: none;
@@ -398,13 +400,13 @@ footer {
 .submit-btn {
   width: 345px;
   height: 70px;
-  background-color: #181818;
+  background-color: var(--red);
   color: white;
   border: none;
   font-size: medium;
 }
 .submit-btn:hover {
-  background-color: var(--red);
+  background-color: var(--blue);
   color: white;
   transition-duration: 0.2s;
 }

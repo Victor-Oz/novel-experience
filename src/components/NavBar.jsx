@@ -30,7 +30,10 @@ export default function Navbar() {
       </div>
       <ul className="links">
         <li>
-          <a id="Link"  href="https://github.com/Victor-Oz"> Github</a>
+          <a id="Link" href="https://github.com/Victor-Oz">
+            {" "}
+            Github
+          </a>
         </li>
         {/* <li>Portfolio</li> */}
         <li>
