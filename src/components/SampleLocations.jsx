@@ -28,6 +28,7 @@ function SampleLocations() {
           src="/wine.jpg"
           alt="wine bottle photo park"
           className="chat-image"
+          loading="lazy"
         />
       </motion.div>
       <motion.div
@@ -66,6 +67,7 @@ function SampleLocations() {
           src="/pleasure.webp"
           alt="pleasure park"
           className="chat-image"
+          loading="lazy"
         />
       </motion.div>
       <motion.div
@@ -104,6 +106,7 @@ function SampleLocations() {
           src="/gardencity.jpg"
           alt="wood house cafe
         "
+          loading="lazy"
           className="chat-image"
         />
       </motion.div>
@@ -140,6 +143,7 @@ function SampleLocations() {
           src="/happyman.jpg"
           alt="photograph of a man happy
         "
+          loading="lazy"
           className="chat-image"
         />
       </motion.div>

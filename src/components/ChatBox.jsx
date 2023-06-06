@@ -12,6 +12,7 @@ function ChatBox() {
         className="giffy"
         src="/beast.gif"
         alt=""
+        loading="lazy"
       />
       <motion.div
         initial={{ opacity: 0.5, y: 150 }}
@@ -19,7 +20,7 @@ function ChatBox() {
         transition={{ delay: 0.3 }}
         className="phonecase"
       >
-        <img className="phone" src="/iphone.png" alt="" />
+        <img className="phone" src="/iphone.png" alt="" loading="lazy" />
         <div className="chat-box-subcontainer">
           <motion.div
             initial={{ x: -40, opacity: 0.5, scale: 0.9 }}
@@ -39,7 +40,7 @@ function ChatBox() {
             transition={{ delay: 0.3 }}
             className="right-chat-container"
           >
-            <img className="chat-gif" src="/giphy.gif"></img>
+            <img className="chat-gif" src="/giphy.gif" loading="lazy"></img>
             <div className="right-chat ">Maybe some other time </div>
           </motion.div>
           <motion.div
@@ -62,6 +63,7 @@ function ChatBox() {
         className="giffy"
         src="/drake.webp"
         alt=""
+        loading="lazy"
       />
     </div>
   );

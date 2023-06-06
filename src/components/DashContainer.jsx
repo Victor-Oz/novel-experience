@@ -13,6 +13,7 @@ function DashContainer() {
           initial={{ x: 400, opacity: 0 }}
           animate={{ x: 0, opacity: 0.2 }}
           transition={{ delay: 0.5, duration: 0.6 }}
+          loading="lazy"
         ></motion.img>
         <div className="dash-colors-container">
           <div className=" purple  ">One new experience,</div>
